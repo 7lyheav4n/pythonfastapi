@@ -36,7 +36,7 @@ jobs:
         file: ./Dockerfile
         push: ${{ github.event_name != 'pull_request' }}
         tags: |
-          docker.io/${{ github.repository }}:latest
-          docker.io/${{ github.repository }}:main-${{ github.sha }}
+          docker.io/tpsregistry/pythonfastapi:latest
+          docker.io/tpsregistry/pythonfastapi:main-${{ github.sha }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
