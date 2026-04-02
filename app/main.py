@@ -4,6 +4,6 @@ from .routers import items
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="FastAPI + PostgreSQL")
+app = FastAPI(title="FastAPI + PostgreSQL", redirect_slashes=False)
 
 app.include_router(items.router)

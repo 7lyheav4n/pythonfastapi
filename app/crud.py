@@ -26,4 +26,8 @@ def create_item(db: Session, item: schemas.ItemCreate):
     return db_item
 
 def get_items(db: Session):
-    return db.query(models.Item).all()
+    items = db.query(models.Item).all()
+    print(f"[DEBUG] items found: {len(items)}")  # ← add this
+    for i in items:
+        print(f"  -> {i.id} {i.name}")
+    return items
