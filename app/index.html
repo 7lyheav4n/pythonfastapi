@@ -1,0 +1,143 @@
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; }
+#stage {
+  background: #000;
+  width: 100%;
+  padding: 32px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+#title {
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+#art {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11.5px;
+  line-height: 1.45;
+  white-space: pre;
+  color: #c8c8c8;
+  text-shadow: 0 0 6px rgba(200,200,200,0.18);
+  user-select: none;
+}
+#subtitle {
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.5em;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  margin-top: 22px;
+}
+</style>
+<div id="stage">
+  <div id="title">N E W &nbsp; A N T I O C H</div>
+  <div id="art"></div>
+  <div id="subtitle">terminus &bull; exotus &bull; penantia</div>
+</div>
+<script>
+const lines = [
+"                                         /--\\                                         ",
+"                                        /ABCD\\                                        ",
+"                                   /---/ EFGH \\---\\                                   ",
+"                                  <IJKLMNOPQRSTｦｲｸ\\                                  ",
+"                                   \\UVWXYﾌﾔﾖﾙﾚZ1234 /                                  ",
+"                                   +-56789@#$%^&*-+                                   ",
+"                                   \\()¦｜*&^%+-/~{/                                   ",
+"                                    \\---|[|`]}ABC /--/                                    ",
+"                                        |DEFｦｲｸ/                                        ",
+"                                        |GHIJKL|                                        ",
+"                                        |MNOPQR|                                        ",
+"                                        |STUVWX\\                                        ",
+"       /---------------------------------YZ123╚═\\--------------------------------------+",
+"    |-/ U2FsdmF0aW9uIGlzIG5vdCBhIGdpZnQ7IGl0IG11c3QgYmUgcGFpZCBmb3IgaW4gdGhlIGNvaW4g+",
+"    \\b2YgYWdvbnkgYW5kIGRlc3BhaXIu ｦｲｸGHIJKLMNOPQRSTｺｿﾁﾄﾉﾛﾝUVWXYﾌﾔﾖﾙﾚZ123456789@ /--/ ",
+"     \\---|#$%^&*()¦｜*&^%+-/~{[|`]}ABCDEFｦｲｸGHIJKLMNOPQRSTｺｿﾁﾄﾉﾛﾝUVWXYﾌﾔﾖﾙﾚZ /---/     ",
+"         --------------------------------123456|-----------------------------/          ",
+"                                        |789@#$|                                        ",
+"                                        |%^&*()|                                        ",
+"                                        |¦｜*&^|                                        ",
+"                                        \\%+-/~|                                        ",
+"                                        |{[|`]}|                                        ",
+"                          +-----\\      |ABCDEF|                                        ",
+"                          \\ｦｲｸGHI\\-----+JKLMNOP+                                        ",
+"                           \\ QRSTｺｿﾁﾄ| ﾉﾛﾝUVW|                                        ",
+"                            \\--\\XYﾌﾔﾖﾙﾚZ123456|                                        ",
+"                                \\--\\789@#$%^&*|                                        ",
+"                                    \\--\\()¦｜*& \\-\\                                     ",
+"                                        \\^%+-/~{[|`]\\-\\                                  ",
+"                                        |]}ABCDEFｦｲｸ\\-\\                               ",
+"                                        |GHIJ| KLMNOPQR\\\\                             ",
+"                                        |STUV|\\-\\ WXYﾌﾔﾖﾙﾚZ \\-\\                          ",
+"                                        |1234|   \\-\\ 56789@#$\\\\                        ",
+"                                        |%^&*|      \\-\\ ()¦｜*&/                       ",
+"                                        | +-~|         \\-----/                        ",
+"                                        | {[|                                        ",
+"                                        | `]}|                                        ",
+"                                        \\ ABC|                                        ",
+"                                         \\ DEF /                                        ",
+"                                          \\ｦｲ/                                         ",
+"                                           V                                           "
+];
+
+const glitchColors = [
+  '#e05c5c','#e0885c','#e0d45c','#5ce07a','#5cb8e0','#9b5ce0','#e05cb8','#5ce0d4'
+];
+const structureChars = new Set(['/','\\','|','-','+','<','>','╚','═','╗','╔','[',']','{','}','`']);
+
+function colorChar(ch, i, j) {
+  if (ch === ' ') return '<span> </span>';
+  if (structureChars.has(ch)) {
+    return `<span style="color:#888;opacity:0.85">${ch}</span>`;
+  }
+  if (Math.random() < 0.07) {
+    const col = glitchColors[Math.floor(Math.random() * glitchColors.length)];
+    return `<span style="color:${col};text-shadow:0 0 8px ${col}88">${ch}</span>`;
+  }
+  const brightness = 140 + Math.floor(Math.random() * 80);
+  return `<span style="color:rgb(${brightness},${brightness},${brightness})">${ch}</span>`;
+}
+
+function render() {
+  const art = document.getElementById('art');
+  let html = '';
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    for (let j = 0; j < line.length; j++) {
+      html += colorChar(line[j], i, j);
+    }
+    html += '\n';
+  }
+  art.innerHTML = html;
+}
+
+render();
+
+setInterval(() => {
+  const spans = document.getElementById('art').querySelectorAll('span');
+  const count = Math.floor(spans.length * 0.012);
+  for (let k = 0; k < count; k++) {
+    const idx = Math.floor(Math.random() * spans.length);
+    const span = spans[idx];
+    const ch = span.textContent;
+    if (ch === ' ' || structureChars.has(ch)) continue;
+    if (Math.random() < 0.5) {
+      const col = glitchColors[Math.floor(Math.random() * glitchColors.length)];
+      span.style.color = col;
+      span.style.textShadow = `0 0 8px ${col}88`;
+      setTimeout(() => {
+        const b = 140 + Math.floor(Math.random() * 80);
+        span.style.color = `rgb(${b},${b},${b})`;
+        span.style.textShadow = '';
+      }, 120 + Math.random() * 300);
+    }
+  }
+}, 80);
+</script>

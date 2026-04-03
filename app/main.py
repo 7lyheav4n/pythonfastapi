@@ -19,3 +19,7 @@ def startup_seed():
         print("[startup] seed complete")
     finally:
         db.close()
+        
+@app.get("/")
+def root():
+    return {"message": "NA"}
