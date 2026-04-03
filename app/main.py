@@ -1,4 +1,7 @@
+from email import message
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from .database import Base, engine, SessionLocal
 from .routers import items, units
 from . import crud
@@ -6,6 +9,7 @@ from . import crud
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="FastAPI + PostgreSQL", redirect_slashes=False)
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.include_router(items.router)
 app.include_router(units.router)
@@ -22,4 +26,8 @@ def startup_seed():
         
 @app.get("/")
 def root():
-    return {"message": "NA"}
+    return FileResponse("static/index.html")
+
+@app.get("/status")
+def status():
+    return {"message": "_New_Antioch_", "status": "online"}
