@@ -13,6 +13,7 @@ def get_db():
         db.close()
 
 @router.post("/seed", summary="Insert fixed items into DB")
+@router.post("seed", summary="Insert fixed items into DB")
 def seed_items(db: Session = Depends(get_db)):
     inserted = crud.seed_items(db)
     if inserted:
@@ -23,6 +24,7 @@ def seed_items(db: Session = Depends(get_db)):
 def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
     return crud.create_item(db, item)
 
+@router.get("", response_model=list[schemas.ItemResponse])
 @router.get("/", response_model=list[schemas.ItemResponse])
 def list_items(db: Session = Depends(get_db)):
     return crud.get_items(db)
