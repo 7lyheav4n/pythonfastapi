@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from .database import Base, engine, SessionLocal
-from .routers import items, units
+from .routers import items, units, currency
 from . import crud
 
 Base.metadata.create_all(bind=engine)
@@ -13,6 +13,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.include_router(items.router)
 app.include_router(units.router)
+app.include_router(currency.router)
 
 @app.on_event("startup")
 def startup_seed():
@@ -20,6 +21,7 @@ def startup_seed():
     try:
         crud.seed_items(db)
         crud.seed_units(db)
+        crud.seed_currency(db)
         print("[startup] seed complete")
     finally:
         db.close()

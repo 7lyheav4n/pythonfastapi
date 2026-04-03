@@ -31,6 +31,34 @@ FIXED_UNITS = [
     },
 ]
 
+FIXED_CURRENCY = [
+    {
+        "coinage": "ducat",
+        "usage": "principality_of_new_antioch",
+        "description": "The Currency of the city of The Principality of New Antioch is the Ducat, used throughout the Levant by Faithful forces to buy weapons, equipment, and recruit mercenaries."
+    },
+    {
+        "coinage": "dinar",
+        "usage": "sultanate_of_the_iron_wall",
+        "description": "The rich mines within the Great Iron wall produce gold aplenty, and the Sultanate issues gold dinars and silver drachms with exceeding purity and standardised weight. The coins are produced by the alchemists of the House of Wisdom, which explains their extraordinary craftsmanship and artistry. The law severely punishes those who try to debase dinars by being hung and disemboweled simultaneously."
+    },
+    {
+        "coinage": "silver_coin",
+        "usage": "heretic_legionaire",
+        "description": "heretic nations also value coin, for avarice of Mammon, one of the great princes of Hell knows no bounds, and he controls the commerce in the domains of the damned. Mammon’s greed is such that most gold ends up in his coffers in the Fourth Circle of Hell, but just enough silver remains in calculation as to form the most common coinage. These coins come with various symbols of rival Arch-devils, but they all have blasphemous text extolling the betrayal of the redeemer by Judas. Each piece of silver is tarnished due the taint of Hell."
+    },
+    {
+        "coinage": "souls",
+        "usage": "cult_of_the_Black_Grail;court_of_the_seven_headed_serpent",
+        "description": "bodies of men, horses, dogs, insects and other animals of every kind that are infected by the Black Grail lurch to their feet, driven by a demonic will. Not living, not dead, they become vessels to spread the corruption of their master ever further, forming warbands that strive to find and infect life of any kind."
+    },
+    {
+        "coinage": "slaves",
+        "usage": "court_of_the_seven_headed_serpent",
+        "description": "living human slave soldiers of the Court known as the wretched. These unfortunate souls possess not a drop of demon blood. They act as disposable shock troops or are used as subjects of torture to power the Goetic magic of the sorcerers and other users of the dark arts."
+    }
+]
+
 def seed_items(db: Session):
     inserted = []
     for data in FIXED_ITEMS:
@@ -49,6 +77,16 @@ def seed_units(db: Session):
         if not exists:
             db.add(models.Unit(**data))
             inserted.append(data["name"])
+    db.commit()
+    return inserted
+
+def seed_currency(db: Session):
+    inserted = []
+    for data in FIXED_CURRENCY:
+        exists = db.query(models.Currency).filter(models.Currency.coinage == data["coinage"]).first()
+        if not exists:
+            db.add(models.Currency(**data))
+            inserted.append(data["coinage"])
     db.commit()
     return inserted
 
@@ -75,3 +113,15 @@ def create_unit(db: Session, unit: schemas.UnitCreate):
 
 def get_units(db: Session):
     return db.query(models.Unit).all()
+
+def create_currency(db: Session, unit: schemas.UnitCreate):
+    db_currency = models.Unit(**unit.model_dump())
+    db.add(db_currency)
+    db.commit()
+    db.refresh(db_currency)
+    return db_currency
+
+def get_currency(db: Session):
+    return db.query(models.Unit).all()
+    
+    

@@ -18,3 +18,11 @@ class Unit(Base):
     allegiance = Column(String, nullable=False)
     type = Column(String, nullable=False)
     description = Column(String, nullable=True)
+
+class Currency(Base):
+    __tablename__ = "currency"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    coinage = Column(String, nullable=False)
+    usage = Column(String, nullable=True)
+    description = Column(String, nullable=True)

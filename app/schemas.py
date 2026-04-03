@@ -28,3 +28,16 @@ class UnitResponse(UnitBase):
     id: int
     class Config:
         from_attributes = True
+        
+class CurrencyBase(BaseModel):
+    coinage: str
+    usage: str
+    description: str | None = None
+
+class CurrencyCreate():
+    pass
+    
+class CurrencyResponse(CurrencyBase):
+    id: int
+    class config:
+        from_attribute = True
