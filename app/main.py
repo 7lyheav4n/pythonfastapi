@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from .database import Base, engine
+from .database import Base, engine, SessionLocal
 from .routers import items
+from . import crud
 
 Base.metadata.create_all(bind=engine)
 
