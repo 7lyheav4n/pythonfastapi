@@ -114,14 +114,14 @@ def create_unit(db: Session, unit: schemas.UnitCreate):
 def get_units(db: Session):
     return db.query(models.Unit).all()
 
-def create_currency(db: Session, unit: schemas.UnitCreate):
-    db_currency = models.Unit(**unit.model_dump())
+def create_currency(db: Session, currency: schemas.CurrencyCreate):
+    db_currency = models.Currency(**currency.model_dump())
     db.add(db_currency)
     db.commit()
     db.refresh(db_currency)
     return db_currency
 
-def get_currency(db: Session):
-    return db.query(models.Unit).all()
+def get_currencies(db: Session):
+    return db.query(models.Currency).all()
     
     

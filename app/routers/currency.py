@@ -14,10 +14,10 @@ def get_db():
 
 @router.get("", response_model=list[schemas.CurrencyResponse])
 @router.get("/", response_model=list[schemas.CurrencyResponse])
-def list_currency(db: Session = Depends(get_db)):
-    return crud.get_currency(db)
+def list_currencies(db: Session = Depends(get_db)):
+    return crud.get_currencies(db)
 
 @router.post("", response_model=schemas.CurrencyResponse)
 @router.post("/", response_model=schemas.CurrencyResponse)
-def create_currency(unit: schemas.CurrencyCreate, db: Session = Depends(get_db)):
-    return crud.create_currency(db, unit)
+def create_currency(currency: schemas.CurrencyCreate, db: Session = Depends(get_db)):
+    return crud.create_currency(db, currency)

@@ -24,5 +24,5 @@ class Currency(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     coinage = Column(String, nullable=False)
-    usage = Column(String, nullable=True)
+    usage = Column(String, nullable=False)
     description = Column(String, nullable=True)

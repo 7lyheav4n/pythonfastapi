@@ -34,10 +34,11 @@ class CurrencyBase(BaseModel):
     usage: str
     description: str | None = None
 
-class CurrencyCreate():
+class CurrencyCreate(CurrencyBase):
     pass
-    
+
 class CurrencyResponse(CurrencyBase):
     id: int
-    class config:
-        from_attribute = True
+    class Config:
+        from_attributes = True
+        
