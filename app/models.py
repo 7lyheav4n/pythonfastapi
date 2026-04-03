@@ -8,3 +8,13 @@ class Item(Base):
     class_name = Column(String, nullable=False)
     name = Column(String, nullable=False)
     description = Column(String, nullable=True)
+
+class Unit(Base):
+    __tablename__ = "units"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, nullable=False)
+    faction = Column(String, nullable=False)
+    allegiance = Column(String, nullable=False)
+    type = Column(String, nullable=False)
+    description = Column(String, nullable=True)
