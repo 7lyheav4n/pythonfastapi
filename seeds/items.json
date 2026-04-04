@@ -1,0 +1,17 @@
+[
+  {
+    "name": "white_gold_grail",
+    "class_name": "Holy",
+    "description": "Holy artifact — the sacred chalice said to grant eternal life to the worthy."
+  },
+  {
+    "name": "holy_jaw",
+    "class_name": "Mythic",
+    "description": "Mythic relic — the preserved teeth of Saint Anthony, believed to speak divine truth."
+  },
+  {
+    "name": "enima",
+    "class_name": "Legend",
+    "description": "Legend weapon — the Spear of Fate, said to decide the destiny of whoever it pierces."
+  }
+]

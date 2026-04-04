@@ -1,0 +1,27 @@
+[
+  {
+    "coinage": "ducat",
+    "usage": "principality_of_new_antioch",
+    "description": "The Currency of the city of The Principality of New Antioch is the Ducat, used throughout the Levant by Faithful forces to buy weapons, equipment, and recruit mercenaries."
+  },
+  {
+    "coinage": "dinar",
+    "usage": "sultanate_of_the_iron_wall",
+    "description": "The rich mines within the Great Iron wall produce gold aplenty, and the Sultanate issues gold dinars and silver drachms with exceeding purity and standardised weight."
+  },
+  {
+    "coinage": "silver_coin",
+    "usage": "heretic_legionaire",
+    "description": "heretic nations also value coin, for avarice of Mammon, one of the great princes of Hell knows no bounds, and he controls the commerce in the domains of the damned."
+  },
+  {
+    "coinage": "souls",
+    "usage": "cult_of_the_Black_Grail;court_of_the_seven_headed_serpent",
+    "description": "bodies of men, horses, dogs, insects and other animals of every kind that are infected by the Black Grail lurch to their feet, driven by a demonic will."
+  },
+  {
+    "coinage": "slaves",
+    "usage": "court_of_the_seven_headed_serpent",
+    "description": "living human slave soldiers of the Court known as the wretched. These unfortunate souls possess not a drop of demon blood."
+  }
+]

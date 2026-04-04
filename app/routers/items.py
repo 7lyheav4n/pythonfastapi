@@ -28,3 +28,12 @@ def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
 @router.get("/", response_model=list[schemas.ItemResponse])
 def list_items(db: Session = Depends(get_db)):
     return crud.get_items(db)
+
+# ------- Seed (JSON file → DB) -------------------------------------------------------
+ 
+@router.post("/seed", summary="Seed items from seeds/items.json")
+def seed_items(db: Session = Depends(get_db)):
+    inserted = crud.seed_items(db)
+    if inserted:
+        return {"message": "Seeded successfully", "inserted": inserted}
+    return {"message": "All items already exist, nothing inserted"}

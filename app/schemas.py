@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# ------- Items --------------------------------------------------------
 class ItemBase(BaseModel):
     name: str
     description: str | None = None
@@ -14,6 +15,7 @@ class ItemResponse(ItemBase):
     class Config:
         from_attributes = True
 
+# ------- Units --------------------------------------------------------
 class UnitBase(BaseModel):
     name: str
     faction: str
@@ -28,7 +30,8 @@ class UnitResponse(UnitBase):
     id: int
     class Config:
         from_attributes = True
-        
+
+# ------- Currency --------------------------------------------------------
 class CurrencyBase(BaseModel):
     coinage: str
     usage: str
@@ -42,3 +45,4 @@ class CurrencyResponse(CurrencyBase):
     class Config:
         from_attributes = True
         
+# ------- NONE --------------------------------------------------------
