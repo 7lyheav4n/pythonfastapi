@@ -11,23 +11,19 @@ def get_db():
         yield db
     finally:
         db.close()
-
-@router.post("/seed", summary="Insert fixed items into DB")
-@router.post("seed", summary="Insert fixed items into DB")
-def seed_items(db: Session = Depends(get_db)):
-    inserted = crud.seed_items(db)
-    if inserted:
-        return {"message": "Seeded successfully", "inserted": inserted}
-    return {"message": "All items already exist, nothing inserted"}
-
-@router.post("/", response_model=schemas.ItemResponse)
-def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
-    return crud.create_item(db, item)
-
+        
+# ------- GET -------------------------------------------------------
 @router.get("", response_model=list[schemas.ItemResponse])
 @router.get("/", response_model=list[schemas.ItemResponse])
 def list_items(db: Session = Depends(get_db)):
     return crud.get_items(db)
+
+# ------- POST -------------------------------------------------------
+@router.post("", response_model=list[schemas.ItemResponse])
+@router.post("/", response_model=schemas.ItemResponse)
+def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
+    return crud.create_item(db, item)
+
 
 # ------- Seed (JSON file → DB) -------------------------------------------------------
  

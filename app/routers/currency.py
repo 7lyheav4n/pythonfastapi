@@ -11,12 +11,14 @@ def get_db():
         yield db
     finally:
         db.close()
-
+        
+# ------- GET -------------------------------------------------------
 @router.get("", response_model=list[schemas.CurrencyResponse])
 @router.get("/", response_model=list[schemas.CurrencyResponse])
 def list_currencies(db: Session = Depends(get_db)):
     return crud.get_currencies(db)
 
+# ------- POST -------------------------------------------------------
 @router.post("", response_model=schemas.CurrencyResponse)
 @router.post("/", response_model=schemas.CurrencyResponse)
 def create_currency(currency: schemas.CurrencyCreate, db: Session = Depends(get_db)):

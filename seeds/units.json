@@ -4,20 +4,31 @@
     "faction": "Trench_Pilgrims",
     "allegiance": "faithful",
     "type": "trooper",
-    "description": "The Stigmatic Nuns are female warrior-nuns who worship the Third Meta-Christ, and cover themselves in blood and injuries to match his. They are masters of close-combat and melee, brandishing swords and pistols as they make their way through No Man's Land without fear. Even when injured, they grow stronger, suffering as their Lord once did."
+    "description": "The Stigmatic Nuns are female warrior-nuns who worship the Third Meta-Christ, and cover themselves in blood and injuries to match his. They are masters of close-combat and melee, brandishing swords and pistols as they make their way through No Man's Land without fear. Even when injured, they grow stronger, suffering as their Lord once did.",
+    "id": 1
   },
   {
     "name": "castigator",
     "faction": "Trench_Pilgrims",
     "allegiance": "faithful",
     "type": "elite",
-    "description": "Tasked with instilling the Fear of God in the troops, this orthodoxy officer keeps the soldiers on the path of righteousness and punishes those who transgress. They are protected by their unwavering faith as well as by the saints they revere."
+    "description": "Tasked with instilling the Fear of God in the troops, this orthodoxy officer keeps the soldiers on the path of righteousness and punishes those who transgress. They are protected by their unwavering faith as well as by the saints they revere.",
+    "id": 2
   },
   {
     "name": "sin_eater",
     "faction": "Heretic_Legion;court_of_the_Seven_Headed_Serpent;Cult_of_the_Black_Grail",
     "allegiance": "heretic",
     "type": "mercenary",
-    "description": "Sin Eaters are horrific creatures: once they were mortal men and women, but their overwhelming greed and hunger for human flesh tainted with Sin, combined with the corrupting influence of the Hellgate, has turned them into a form that matches their inner foulness."
+    "description": "Sin Eaters are horrific creatures: once they were mortal men and women, but their overwhelming greed and hunger for human flesh tainted with Sin, combined with the corrupting influence of the Hellgate, has turned them into a form that matches their inner foulness.",
+    "id": 3
+  },
+  {
+    "name": "trench_ghost",
+    "faction": "unknown",
+    "allegiance": "faithful/heretic",
+    "type": "trooper",
+    "description": "The earth will not suffer their polluted bodies and souls, forcing them to lurch to their feet and back into the fray. Heaven is denied to them, yet as their deaths tie their souls to Earth, nor can they be claimed by Hell. Thus a new Trench Ghost is born. They attack all intruders to No Man’s Land on sight, silently gathering into assault squads when they sense anything that does not share their miserable state.",
+    "id": 4
   }
 ]

@@ -1,6 +1,7 @@
 import os
 import json
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from . import models, schemas
 
 
@@ -16,8 +17,7 @@ def load_seed(filename: str) -> list:
 # --------------------------------------------------------------------------------
 
 
-# --------------------------------------------------------------------------------
- 
+# -------------------- SEEDING -------------------------------------------------------
 def seed_items(db: Session):
     inserted = []
     for data in load_seed("items.json"):
@@ -31,13 +31,16 @@ def seed_items(db: Session):
 def seed_units(db: Session):
     inserted = []
     for data in load_seed("units.json"):
-        exists = db.query(models.Unit).filter(models.Unit.name == data["name"]).first()
+        exists = db.query(models.Unit).filter(
+            models.Unit.name == data["name"],
+            models.Unit.faction == data["faction"]
+        ).first()
         if not exists:
             db.add(models.Unit(**data))
             inserted.append(data["name"])
     db.commit()
     return inserted
- 
+
 def seed_currency(db: Session):
     inserted = []
     for data in load_seed("currency.json"):
@@ -48,7 +51,8 @@ def seed_currency(db: Session):
     db.commit()
     return inserted
 
-# --------------------------------------------------------------------------------
+
+# ------------------ ITEM -------------------------------------------------------
 def create_item(db: Session, item: schemas.ItemCreate):
     db_item = models.Item(**item.model_dump())
     db.add(db_item)
@@ -62,7 +66,8 @@ def get_items(db: Session):
     for i in items:
         print(f"  -> {i.id} {i.name}")
     return items
-# --------------------------------------------------------------------------------
+
+# ------------------ UNIT ------------------------------------------------------
 def create_unit(db: Session, unit: schemas.UnitCreate):
     db_unit = models.Unit(**unit.model_dump())
     db.add(db_unit)
@@ -73,10 +78,9 @@ def create_unit(db: Session, unit: schemas.UnitCreate):
 def get_units(db: Session):
     return db.query(models.Unit).all()
 
-def get_units_by_faction(db: Session, faction: str):
-    return db.query(models.Unit).filter(
-        models.Unit.faction.ilike(f"%{faction}%")
-    ).all()
+def get_units_by_faction(db: Session, factions: list[str]):
+    filters = [models.Unit.faction.ilike(f"%{faction}%") for faction in factions]
+    return db.query(models.Unit).filter(or_(*filters)).all()
     
 def get_all_factions(db: Session):
     rows = db.query(models.Unit.faction).distinct().all()
@@ -85,8 +89,9 @@ def get_all_factions(db: Session):
         for f in row[0].split(";"):
             factions.add(f.strip())
     return sorted(factions)
-# --------------------------------------------------------------------------------
 
+
+# --------------------- CURRENCY -----------------------------------------------
 def create_currency(db: Session, currency: schemas.CurrencyCreate):
     db_currency = models.Currency(**currency.model_dump())
     db.add(db_currency)
