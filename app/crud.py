@@ -17,30 +17,30 @@ def load_seed(filename: str) -> list:
 
 
 # --------------------------------------------------------------------------------
+ 
 def seed_items(db: Session):
     inserted = []
-    for data in FIXED_ITEMS:
+    for data in load_seed("items.json"):
         exists = db.query(models.Item).filter(models.Item.name == data["name"]).first()
         if not exists:
-            item = models.Item(**data)
-            db.add(item)
+            db.add(models.Item(**data))
             inserted.append(data["name"])
     db.commit()
     return inserted
-
+ 
 def seed_units(db: Session):
     inserted = []
-    for data in FIXED_UNITS:
+    for data in load_seed("units.json"):
         exists = db.query(models.Unit).filter(models.Unit.name == data["name"]).first()
         if not exists:
             db.add(models.Unit(**data))
             inserted.append(data["name"])
     db.commit()
     return inserted
-
+ 
 def seed_currency(db: Session):
     inserted = []
-    for data in FIXED_CURRENCY:
+    for data in load_seed("currency.json"):
         exists = db.query(models.Currency).filter(models.Currency.coinage == data["coinage"]).first()
         if not exists:
             db.add(models.Currency(**data))
