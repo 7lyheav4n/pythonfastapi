@@ -29,19 +29,6 @@ def make_unit_router(
     def list_units(db: Session = Depends(get_db)):
         return get_all(db)
 
-    @router.get("/factions", response_model=list[str])
-    def list_factions(db: Session = Depends(get_db)):
-        return get_factions(db)
-
-    @router.get("/faction", response_model=list[schemas.UnitResponse])
-    def get_by_faction(
-        faction_name: List[str] = Query(..., description="One or more faction names"),
-        db: Session = Depends(get_db),
-    ):
-        units = by_faction(db, faction_name)
-        if not units:
-            raise HTTPException(status_code=404, detail=f"No units found for: {faction_name}")
-        return units
 
     @router.post("", response_model=schemas.UnitResponse)
     @router.post("/", response_model=schemas.UnitResponse)

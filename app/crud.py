@@ -96,8 +96,20 @@ def _get_all_factions(db: Session, model):
             factions.add(f.strip())
     return sorted(factions)
  
- 
- # --- Court of the Seven Headed Serpent -----------------------------------------------
+## --- GET ALL UNITS -----------------------------------------------
+
+def get_all_units(db: Session) -> dict:
+    return {
+        "court_of_seven_headed": _get_units(db, models.UnitCourtOfSevenHeaded),
+        "cult_of_black_grail":   _get_units(db, models.UnitCultOfBlackGrail),
+        "heretic_legion":        _get_units(db, models.UnitHereticLegion),
+        "new_antioch":           _get_units(db, models.UnitNewAntioch),
+        "trench_pilgrims":       _get_units(db, models.UnitTrenchPilgrims),
+        "iron_sultanate":        _get_units(db, models.UnitIronSultanate),
+    }
+
+    
+# --- Court of the Seven Headed Serpent -----------------------------------------------
  
 def get_units_court(db: Session):
     return _get_units(db, models.UnitCourtOfSevenHeaded)
@@ -105,11 +117,6 @@ def get_units_court(db: Session):
 def create_unit_court(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitCourtOfSevenHeaded, unit)
  
-def get_units_court_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitCourtOfSevenHeaded, factions)
- 
-def get_factions_court(db: Session):
-    return _get_all_factions(db, models.UnitCourtOfSevenHeaded)
  
  
 # --- Cult of the Black Grail -----------------------------------------------------------
@@ -120,11 +127,6 @@ def get_units_cult(db: Session):
 def create_unit_cult(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitCultOfBlackGrail, unit)
  
-def get_units_cult_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitCultOfBlackGrail, factions)
- 
-def get_factions_cult(db: Session):
-    return _get_all_factions(db, models.UnitCultOfBlackGrail)
  
  
 # --- Heretic Legion ------------------------------------------------------------------
@@ -135,12 +137,7 @@ def get_units_heretic(db: Session):
 def create_unit_heretic(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitHereticLegion, unit)
  
-def get_units_heretic_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitHereticLegion, factions)
- 
-def get_factions_heretic(db: Session):
-    return _get_all_factions(db, models.UnitHereticLegion)
- 
+
  
 # --- New Antioch -----------------------------------------------------------------
  
@@ -150,11 +147,7 @@ def get_units_new_antioch(db: Session):
 def create_unit_new_antioch(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitNewAntioch, unit)
  
-def get_units_new_antioch_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitNewAntioch, factions)
- 
-def get_factions_new_antioch(db: Session):
-    return _get_all_factions(db, models.UnitNewAntioch)
+
  
  
 # --- Trench Pilgrims ---------------------------------------------------------------
@@ -165,11 +158,7 @@ def get_units_trench(db: Session):
 def create_unit_trench(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitTrenchPilgrims, unit)
  
-def get_units_trench_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitTrenchPilgrims, factions)
- 
-def get_factions_trench(db: Session):
-    return _get_all_factions(db, models.UnitTrenchPilgrims)
+
  
  
 # --- Iron Sultanate -------------------------------------------------------------
@@ -179,11 +168,6 @@ def get_units_sultanate(db: Session):
 def create_unit_sultanate(db: Session, unit: schemas.UnitCreate):
     return _create_unit(db, models.UnitIronSultanate, unit)
  
-def get_units_sultanate_by_faction(db: Session, factions: list[str]):
-    return _get_units_by_faction(db, models.UnitIronSultanate, factions)
- 
-def get_factions_sultanate(db: Session):
-    return _get_all_factions(db, models.UnitIronSultanate)
 
 
 # ------------------ ITEM CRUD -------------------------------------------------------
