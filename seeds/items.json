@@ -2,37 +2,31 @@
   {
     "name": "white_gold_grail",
     "description": "Holy artifact — the sacred chalice said to grant eternal life to the mortal world.",
-    "class_name": "Holy",
-    "id": 1
+    "class_name": "Holy"
   },
   {
     "name": "holy_jaw",
     "description": "Mythic relic — the preserved teeth of Saint Anthony, believed to speak divine truth.",
-    "class_name": "Mythic",
-    "id": 2
+    "class_name": "Mythic"
   },
   {
     "name": "enima",
     "description": "Legendary weapon — the Spear of Fate, true to behold decide the destiny of whoever it pierces.",
-    "class_name": "Legend",
-    "id": 3
+    "class_name": "Legend"
   },
   {
     "name": "shroud_of_turin",
     "description": "Holy relic — the burial cloth bearing the image of Christ.",
-    "class_name": "Holy",
-    "id": 4
+    "class_name": "Holy"
   },
   {
     "name": "anti_material_gun",
     "description": "massive holy gun carry by the Communicant anti-tank hunter, using thrice-blessed 50mm anti-armor shells they have carried on their belts or by Mendelist monks who accompany them.",
-    "class_name": "Rare",
-    "id": 5
+    "class_name": "Rare"
   },
   {
     "name": "shrine_anchorite",
     "description": "A colossal suit of machine armour fuelled by diesel and faith, a malevolent weapon draped in holy iconography and weeping gore, emerges to unleash a symphony of slaughter, where the wretched union of man and machine heralds the demise of all who oppose the Almighty.",
-    "class_name": "Legend;Machine",
-    "id": 6
+    "class_name": "Legend;Machine"
   }
 ]

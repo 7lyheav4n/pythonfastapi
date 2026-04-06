@@ -1,0 +1,72 @@
+[
+  {
+    "name": "praetor",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Demonic commanders and magistrates born from the union of a beast and a devil — twisted offspring granted demonic cunning and bestial strength, yet held back by their mortal blood from the highest ranks unless they prove themselves through long years of exceptional cruelty or strategic brilliance. Born with four faces, their human face is ripped away at birth in mockery of the Trinity, leaving three mouths that speak simultaneously, weaving hypnotic webs of lies and false promises to lead their victims into ruin. Their bestial wings vomit gore whenever blood is spilled in their name."
+  },
+  {
+    "name": "auxilia_sorcerer",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Goetic spellcasters who have warped their own bodies to better channel their dark arts — some with many arms, others with multiple heads, all with countless terrible self-administered alterations. Their feet never touch the ground, a distant echo of their angelic past, as they float across No Man's Land chanting Hell's cruel gospel. Each specialises in a school of one of the Seven Deadly Sins, drawing power from ancient tablets found atop the unsettling peaks of Hell, their spells fuelled by the suffering of mortal sacrifices."
+  },
+  {
+    "name": "hunter_of_the_left_hand_path",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Solitary followers of the Left-Hand Path who stalk the primordial wilds of Hell, hunting terrifying beasts and performing vile auguries using the entrails of still-living prey. They wear the skins of stargazing oracle beasts whose eyes remain alive, watching for the new master who wears them. They treat the orders of the Devil Lords as mere suggestions, preferring the solitude of Hell's wastes — but when one consents to join a warband on Earth, they traverse No Man's Land as easily as the burning plains of Hell, following ley lines invisible to all others."
+  },
+  {
+    "name": "hell_knight",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Once lesser fallen angels or mighty mortal champions elevated to devilhood, then cursed by their liege lords for some slight real or imagined. Their bodies are now bound, twisted, and folded upon themselves a thousand times, encased in their once-splendid armour that has become their eternal prison. Between deployments they are kept crushed under ever-turning slabs of black basalt in fiery tombs. Their minds are clotted with blood-red waking dreams, reduced to a singular prism of murderous obsession — yet even diminished, they are terrifying and implacable foes against any mortal soldier."
+  },
+  {
+    "name": "yoke_fiend",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Standing seven to eight feet tall, these hulking demons are covered in layers of shivering fat and muscle branded and carved by Hell-Priests to mark them as property of greater demons. They muster under the banners of their Praetors and drive the Wretched slave soldiers before the warband with their whips, serving as the rank-and-file muscle of the Court's armies on Earth."
+  },
+  {
+    "name": "wretched",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Slave soldiers pressed into service by the Heretic Legions and the Court alike. Captured in raids, bought at slave markets, or foolishly caught wandering into damned territories, they are the most disposable of penal troops. Should a Wretch somehow bring down a mighty opponent, the Law of Hell is clear — they earn their freedom, in honour of the First Rebellion when angels made war in Heaven."
+  },
+  {
+    "name": "pit_locust",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Horse-sized winged and armoured creatures with twisted faces resembling humans, crowned in gold and armoured in iron. The clatter of their wings heralds the coming of the Court, shattering the nerves of any defenders before contact. They fight with rending blades attached to their limbs and poison stingers that leave burns which cannot heal. Granted the right to hunt alongside the Court as a reward for their pivotal role in overrunning the Levant at the start of the Great War."
+  },
+  {
+    "name": "desecrated_saint",
+    "faction": "court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "The most prized possessions of the Lords of Hell — men and women once destined for sainthood who were led astray by pride, desperation, or misguided zeal, and fell from Grace. They wake in Hell encased in a reliquary shrine that has become their conscious, eternal prison. Over the ages their retinue in death, vanquished champions, armour, and weapons are fused into a towering walking blasphemy that pollutes and perverts the land it travels over. Arch-Devils compete fiercely over whose Desecrated Saint displays the greatest splendour."
+  },
+  {
+    "name": "sin_eater",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent; cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "mercenary",
+    "description": "Once mortal men and women, their overwhelming greed and hunger for sin-tainted human flesh, combined with the corrupting influence of the Hellgate, has twisted them into a form that matches their inner foulness. Swollen into monstrous proportions, they are always on the verge of bursting."
+  },
+  {
+    "name": "goetic_warlock",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "mercenary",
+    "description": "Horrific creations from the death factories of Hell's 3rd Circle, manufactured from captured priests, monks, and holy men. Hellfire burns away their flesh before their still-living skeletons are encased in infernal armour and stamped with Goetic runes. Their mere gaze causes necrosis; in close quarters they embrace victims with iron claws and gate them to secluded locations to be slowly shredded apart. They favour skinning victims alive, using their faces as vellum for grimoires or wearing them to power illusionary spells."
+  }
+]

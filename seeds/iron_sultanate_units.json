@@ -1,0 +1,65 @@
+[
+  {
+    "name": "yüzbaşı_captain",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Elite officers promoted from the Janissary corps, their bodies enhanced by Jabirean alchemical arts and their minds hardened by mystics until pain and casualties mean nothing to them. They lead elite squads on missions of great importance — reclaiming holy artefacts, eliminating Heretic nobles — armed with meteoric iron armour, silver-gilded carbines, and legendary kilij swords inscribed with the deeds of past heroes."
+  },
+  {
+    "name": "jabirean_alchemist",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Masters of esoteric power schooled in the hidden knowledge of the Smaragdine Tablet within the House of Wisdom. They control fire, ice, metal, and liquid — crafting intricate mechanical devices, artificial life, and weapons of devastating potency. On the battlefield they supply the Sultanate with alchemical battle lions and unleash compounds that melt flesh from bone or dissolve enemy armour entirely."
+  },
+  {
+    "name": "sultanate_assassin",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Known by many names — Ghost Wolves, the Secret Knives, the Sultan's Wrath — these mystic killers of the Alamut order are chemically altered from childhood to be faster, stronger, and immune to poison. Their blades are imbued with the Milk of Manat, a supreme toxin that turns an unprotected victim black and rots them from within in mere seconds."
+  },
+  {
+    "name": "azeb",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Volunteer light infantry conscripted from across the Sultanate's vast provinces — one household in twenty required to arm a soldier. Experts at feigned retreat and skirmishing, they carry handcrafted jezzail rifles that can fire roughened bullets, iron nails, or alchemically treated slivers of the Iron Wall itself. Armour is rare; speed and cunning are their protection."
+  },
+  {
+    "name": "sultanate_sapper",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Hardened specialists who begin their service fighting blind in the darkness beneath the Iron Wall, battling the clawed beasts Heretics use to mine its foundations. Those who survive a year earn their place above ground, easily recognised by the terrible burns covering their bodies from manning the great cannons — scars they wear as badges of honour. Beyond the Wall they set tufenjieff mines, disable enemy explosives, and carry experimental weapons."
+  },
+  {
+    "name": "lion_of_jabir",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Artificial war beasts created through the Jabirean alchemical process of takwin, each one a unique and often malformed masterwork grown in secret laboratories beneath the golden gardens of Damascus. Deployed as the vanguard of the Sultanate's forces, their speed and ferocity are nearly unmatched. The most tragic among them are those born with human-like intelligence, doomed to comprehend the horror of their own unnatural existence."
+  },
+  {
+    "name": "janissary",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "The Sultan's elite household troops, captured as children beyond the Iron Wall and raised entirely in the arts of war. Their minds are alchemically conditioned to unbreakable loyalty to the Sultan alone, their bodies augmented by Jabirean elixirs, and their ornate armour forged from the same metallic formula as the Iron Wall itself. Armed with jezail rifles, hand mortars, and yatagan blades, they are the devastating hammer that closes after the enemy has been worn down."
+  },
+  {
+    "name": "brazen_bull",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "A monstrous takwin creation commissioned as living field artillery for expeditionary forces. Encased in thrice-hardened bronze scales covered in protective talismans, the Brazen Bull wields flame cannons, volley guns, and holy blades too heavy for even a Janissary to lift. A singleminded, fearless walking bulwark, it shakes the earth with its weapons and serves as a rallying point for the Sultanate's war parties."
+  },
+  {
+    "name": "mamluk_faris",
+    "faction": "iron_sultanate",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Last survivors of the warrior-elite that once ruled a great empire in North Africa, shattered when the Legions of Shaitan razed Alexandria and Cairo. Too proud to retreat behind the Iron Wall, the remaining Mamluks dispersed into the deserts to wage an unending war of ambush and raids. Peerless swords-for-hire who fight alongside any of the Peoples of the Book, passing down the martial arts and ethical code of Furūsiyya from parent to child across generations of endless war."
+  }
+]

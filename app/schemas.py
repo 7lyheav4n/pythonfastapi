@@ -15,6 +15,21 @@ class ItemResponse(ItemBase):
     class Config:
         from_attributes = True
 
+# ------- Currency --------------------------------------------------------
+class CurrencyBase(BaseModel):
+    coinage: str
+    usage: str
+    description: str | None = None
+
+class CurrencyCreate(CurrencyBase):
+    pass
+
+class CurrencyResponse(CurrencyBase):
+    id: int
+    class Config:
+        from_attributes = True
+
+
 # ------- Units --------------------------------------------------------
 class UnitBase(BaseModel):
     name: str
@@ -31,18 +46,5 @@ class UnitResponse(UnitBase):
     class Config:
         from_attributes = True
 
-# ------- Currency --------------------------------------------------------
-class CurrencyBase(BaseModel):
-    coinage: str
-    usage: str
-    description: str | None = None
 
-class CurrencyCreate(CurrencyBase):
-    pass
-
-class CurrencyResponse(CurrencyBase):
-    id: int
-    class Config:
-        from_attributes = True
-        
 # ------- NONE --------------------------------------------------------

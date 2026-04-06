@@ -1,0 +1,72 @@
+[
+  {
+    "name": "heretic_priest",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "The leader of a Heretic warband. These fallen priests perform all kinds of unholy magics, summoning petrifying demons using Goetic spells. Often pledged to a demon lord such as Pazuzu or Guison, they beckon forth new supplicants as dictated by the whispers of their patron arch-devils."
+  },
+  {
+    "name": "heretic_death_commando",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Silent killers equipped with stealth generators that hide them from the eyes of God. These terrifying infiltrators have been known to wipe out entire enemy squads alone. Their training barracks are said to be located in the 7th Circle of Hell, the domain of Beelzebub."
+  },
+  {
+    "name": "heretic_chorister",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Heretics who sacrificed themselves on black altars, carving unholy runes into their flesh until death. Those deemed worthy are reborn after nine days with their severed heads singing blasphemous hymns. Their dirge fills the minds of enemies with visions of the Pits of Hell, breaking resolve and sapping strength."
+  },
+  {
+    "name": "heretic_trooper",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "The backbone of the Heretic forces. They have witnessed the Gate of Hell and survived, taking unbreakable vows that damn them for all eternity and branding them with the mark of whichever Devil Lord has claimed them."
+  },
+  {
+    "name": "anointed_heavy_infantry",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Paragons of unhinged brutality who have made pilgrimage to the Lake of Fire itself. Their flesh is permanently burned and will never heal, but in exchange they are granted Heavy Gehenna armour and unholy strength to wield weapons no ordinary man could lift. Flamethrowers filled with pitch from the Lake of Fire are their signature weapon."
+  },
+  {
+    "name": "war_wolf_assault_beast",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Nightmarish abominations made from captured and possessed creatures, forged in the factories of Hell. Their specially formed heads are designed to cut clean through barbed wire, charging ahead to clear a path for Heretic infantry. Their unique armour is forged in the pits of Hell itself."
+  },
+  {
+    "name": "artillery_witch",
+    "faction": "heretic_legion",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Completely mute figures who stalk the battlefield hurling ordnance from Hell's 3rd Circle death factories. No one has ever seen their faces. They manifest a portal to Hell at will, pulling an infinite supply of Infernal Bombs from the void to support Heretic assaults."
+  },
+  {
+    "name": "wretched",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Slave soldiers pressed into service by the Heretic Legions. Captured in raids, bought at slave markets, or foolishly caught wandering into damned territories, they are the most disposable of penal troops. Volunteering to fight is their only path to freedom — though it rarely leads there."
+  },
+  {
+    "name": "sin_eater",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent; cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "mercenary",
+    "description": "Once mortal men and women, their overwhelming greed and hunger for sin-tainted human flesh, combined with the corrupting influence of the Hellgate, has twisted them into a form that matches their inner foulness. Swollen into monstrous proportions, they are always on the verge of bursting."
+  },
+  {
+    "name": "goetic_warlock",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent; cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "mercenary",
+    "description": "Horrific creations from the death factories of Hell's 3rd Circle, manufactured from captured priests, monks, and holy men. Hellfire burns away their flesh before their still-living skeletons are encased in infernal armour and stamped with Goetic runes. The agony drives them to accept a demonic pact, and thus a new Goetic Warlock is born."
+  }
+]

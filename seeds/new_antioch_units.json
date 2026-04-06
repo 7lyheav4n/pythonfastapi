@@ -1,0 +1,79 @@
+[
+  {
+    "name": "lieutenant",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Leaders of squads and platoons on the distant frontlines, holding troops together through unwavering resolve. They may be nobly born or risen through sheer battlefield merit. Beyond commanding, they are responsible for scrounging weapons, food, and equipment for their soldiers — often through looting No Man's Land — and earn the privilege of first pick of the rarest battlefield finds."
+  },
+  {
+    "name": "trench_cleric",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Holy warriors who tend to the souls of their company, chanting battle prayers and channelling miracles — from healing the wounded to smiting the enemy. They carry portable shrines on their backs dedicated to their Patron saint or Arch-Angel, and are notably addicted to the chemical substances that allow them to perform their miracles."
+  },
+  {
+    "name": "sniper_priest",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Known as the Unseen Priests of the Long Rifle, these deadly servants of the Church have ritually blinded themselves as part of their devotion before taking up the Black Scapular of the Passion. They nonetheless slay enemies from extreme range with unerring accuracy, belonging to ancient Sniper Orders such as those of Saint Sebastian and Saint Ludmila of Bohemia, each with their own weapons, tactics, and holy ammunition."
+  },
+  {
+    "name": "yeoman",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "The backbone of New Antioch's forces — brave men and women who have received standard military training and sworn an oath to the Duke. What they lack compared to elite troops they compensate with sheer numbers and determination. They carry Lee-Enfield rifles as standard issue and M1911 pistols at their side."
+  },
+  {
+    "name": "shocktrooper",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Assault specialists trained to crack open enemy defensive positions. Masters of rapid assault, melee combat, and combined-arms fireteam tactics, they are the tip of the spear when New Antioch needs to take heavily fortified trenches and strongpoints."
+  },
+  {
+    "name": "combat_engineer",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Specialists in destroying bunkers, detecting minefields, and constructing battlefield emplacements under fire. Casualties in their ranks are extremely high, but they consider it an honour to fight and die for New Antioch. Armed with Thompson submachine guns, they are also experts in both setting and disabling explosive devices."
+  },
+  {
+    "name": "mechanized_heavy_infantry",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Heavily armoured soldiers selected from among the best recruits and subjected to intensive chemical enhancements that make them larger and more durable than ordinary soldiers. They carry heavy weaponry such as Maxim machine guns that other soldiers could not wield effectively, serving as the company's devastatingly powerful heavy weapons platform."
+  },
+  {
+    "name": "combat_medic",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "The Sisters of St. Cosmas — a highly trained medical corps bound by a modified Hippocratic Oath to save any wounded soldier of the Faith, while dispatching fallen enemies without mercy. Armed with a combat surgical knife that doubles as a Misericordia, and carrying battlefield drugs that can get gravely wounded soldiers back on their feet long enough to complete their mission."
+  },
+  {
+    "name": "witchburner",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Field officers of the Inquisition, tasked with hunting down witches, warlocks, and heretics beyond the reach of conventional justice. On the battlefield they channel divine retribution through words of condemnation alone, causing sinners to spontaneously burst into flames. Since none are without sin, none are truly safe from their judgement."
+  },
+  {
+    "name": "communicant_anti_tank_hunter",
+    "faction": "principality_of_new_antioch",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Volunteers who underwent Chemical Communion — an infusion of synthesised Meta-Christ blood developed by the Mendelist Order — emerging 10 to 13 feet tall with superhuman strength and durability. They wield massive anti-materiel rifles firing thrice-blessed 50mm shells, capable of destroying enemy vehicles, heavy armour, and fortifications in a single shot. Some lose higher brain functions to the divine choir only they can hear, requiring handlers to relay commands."
+  },
+  {
+    "name": "mendelist_ammo_monk",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Brothers of the Brotherhood of Blessed Munitions, a sub-sect of the Mendelist Order. They supply the faithful with ammunition treated with the chemically altered blood of a Meta-Christ — highly unstable compounds whose formulae are jealously guarded secrets. They brave enemy fire on the front lines to keep the Wrath of the Lord flowing into the guns of the Faithful, under the patronage of St. Barbara."
+  }
+]

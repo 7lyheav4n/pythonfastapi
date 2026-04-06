@@ -1,0 +1,58 @@
+[
+  {
+    "name": "lord_of_tumours",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "A high-ranking noble officiant of the Cult of the Black Grail who spreads filth and corruption amongst friend and foe alike. They commune with Beelzebub, Lord of the Flies, through a trance-like ecstasy, channelling the very power of the Black Grail itself across the battlefield."
+  },
+  {
+    "name": "plague_knight",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "Once exceedingly depraved worshippers of Beelzebub who calmly welcomed the Black Grail tide rather than fleeing it, emerging as cadaver-like creatures half-way between life and death. They retain sentience, intelligence, and dim memories of their past lives — making them deadly guides who lead the infection into isolated settlements that might otherwise escape. The most renowned among them are the twelve great champions of the Fly, who dwell within the city of Ekron, territory of Beelzebub himself."
+  },
+  {
+    "name": "corpse_guard",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "elite",
+    "description": "The strongest human devotees who survived the blessings of the Black Grail — a feat almost no one achieves. Inducted as bodyguards to the nobility of the Cult, they serve with distinction in the hope of one day ascending to join the ranks of the Infernal Nobility themselves."
+  },
+  {
+    "name": "hound_of_the_black_grail",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Grotesque meldings of canine, human, and insect that form the vanguard of the Cult's warbands. They assault defended positions with great loping strides, using probing mouthparts to liquify the internal organs of victims — leaving them helpless and paralysed so they can be infected by Heralds of Beelzebub or torn apart by other vessels of the Grail."
+  },
+  {
+    "name": "grail_thrall",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "What most recipients of the Black Grail's blessings ultimately become — hollowed-out, diseased husks stripped of will, forced to obey the whims of the Black Grail nobility for all eternity while suffering the torment of countless supernatural infections. They come in two varieties: those who have grown almost impervious to further harm from the corruption saturating their bodies, and those still in the agonising throes of transformation."
+  },
+  {
+    "name": "herald_of_beelzebub",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Victims of the Black Grail bestowed with the black honour of being melded with Hell-flies, metamorphosing into grotesque winged insect-creatures of bloated flesh. Their vestigial human bodies remain conscious as they are slowly eaten from within to fuel the Herald's existence. They serve as airborne vanguards whose ear-numbing wing-drone shatters defenders' focus. Their weapons are contaminated with sentient worms that burrow through armour and liquify victims' organs from within."
+  },
+  {
+    "name": "amalgam",
+    "faction": "cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "trooper",
+    "description": "Colossal, shambling masses of dozens of infected bodies — warriors, insects, mammals, and any creature unfortunate enough to succumb to the Black Grail together. Arising from mass graves, charnel trenches, and field hospital refuse, the Grail melds thousands of pounds of flesh and bone into a walking mountain of disease. Its hunger is boundless, its appetite never sated, its elephantine tread crushing anything in its path to pulp. A triumph of Beelzebub's dark genius, personifying his sovereign domain of Gluttony."
+  },
+  {
+    "name": "sin_eater",
+    "faction": "heretic_legion; court_of_the_seven_headed_serpent; cult_of_the_black_grail",
+    "allegiance": "heretic",
+    "type": "mercenary",
+    "description": "Once mortal men and women, their overwhelming greed and hunger for sin-tainted human flesh, combined with the corrupting influence of the Hellgate, has twisted them into a form that matches their inner foulness. Swollen into monstrous proportions, they are always on the verge of bursting."
+  }
+]

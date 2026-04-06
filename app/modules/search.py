@@ -17,8 +17,13 @@ def _search_model(db: Session, model, field) -> tuple[list, float]:
 def search_by_name(db: Session, query: str) -> dict:
     searches = [
         ("items",      models.Item,     models.Item.name),
-        ("units",      models.Unit,     models.Unit.name),
         ("currencies", models.Currency, models.Currency.coinage),
+        ("new_antioch", models.UnitNewAntioch, models.UnitNewAntioch.name),
+        ("iron_sultanate", models.UnitIronSultanate, models.UnitIronSultanate.name),
+        ("trench_pilgrims", models.UnitTrenchPilgrims, models.UnitTrenchPilgrims.name),
+        ("heretic_legion", models.UnitHereticLegion, models.UnitHereticLegion.name),
+        ("court_of_seven_headed", models.UnitCourtOfSevenHeaded, models.UnitCourtOfSevenHeaded.name),
+        ("cult_of_black_grail", models.UnitCultOfBlackGrail, models.UnitCultOfBlackGrail.name)
     ]
 
     timing = {}

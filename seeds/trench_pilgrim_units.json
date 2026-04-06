@@ -1,0 +1,79 @@
+[
+  {
+    "name": "war_prophet",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Charismatic leaders and powerful fighters who drive the pilgrimage from one battlefield to the next through harrowing visions of Armageddon. Consumed by prophecies of the end times, they blast fanatical sermons from shoulder-mounted speakers, inspiring their followers through fear and promises of salvation. Their ultimate goal — and their deepest desire — is martyrdom through glorious death in battle against the forces of Hell."
+  },
+  {
+    "name": "castigator",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Orthodoxy officers tasked with instilling the Fear of God in the troops, keeping soldiers on the path of righteousness and punishing those who transgress. They drive Pilgrim processions forward with their whips, ensuring no one wavers before the enemy. Protected by unwavering faith and the saints they revere, they are as much a threat to the faint-hearted among their own ranks as they are to the Heretics."
+  },
+  {
+    "name": "communicant",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "elite",
+    "description": "Devotees who consumed the actual flesh and blood of a Meta-Christ, surviving the transformation to grow to enormous size infused with divine essence. Wounds they suffer close themselves miraculously. Considered a dangerous heresy by more orthodox Pilgrim processions such as the War Pilgrimage of St. Methodius, who condemn the practice as false salvation."
+  },
+  {
+    "name": "trench_pilgrim",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Men and women with little formal military training who consider it their sacred duty to make pilgrimage to the battlefield to fight the Heretic Legions. When they don the Iron Capirote — which also incorporates a gas mask — they can face even a demon from the deepest pits of Hell without flinching. Death is not always an end: those deemed worthy by the Seventh Meta-Christ are resurrected as Martyr-Penitents, half-way between Heaven and Earth, feeling no pain from bullet or blade."
+  },
+  {
+    "name": "ecclesiastic_prisoner",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Either captured enemies of the True Faith or volunteer sinners seeking atonement, each is strapped with a high explosive and driven ahead of the Pilgrim procession across No Man's Land. The charge is detonated once they reach enemy lines. Bound in chains and consumed by desperate resolve, they surge forward — some hoping the blast cleanses their souls, others simply hoping to somehow survive it."
+  },
+  {
+    "name": "stigmatic_nun",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Holy Sisters who venerate the Third Meta-Christ and manifest his wounds upon their own bodies. Masters of close-quarter combat, they brandish swords and pistols and cross No Man's Land without fear, praying to sustain injuries for the Redeemer. Each wound they suffer makes them stronger rather than weaker — their devotion to suffering as their Lord once did transforms them into instruments of divine vengeance."
+  },
+  {
+    "name": "shrine_anchorite",
+    "faction": "trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "trooper",
+    "description": "Colossal suits of diesel-fuelled machine armour standing twelve to fifteen feet tall, piloted by monk-warriors enclosed within interiors lined with spikes and barbed hooks so they suffer constantly — rejoicing in pain as their Lord once did. Festooned with holy icons, relics, and prayer scrolls on the outside, they wield adamantine Catherine Wheels and immense Bonebreaker Maces. Nearly immune to damage, they are a living altar of war whose mere appearance breaks the will of Heretics."
+  },
+  {
+    "name": "combat_medic",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "The Sisters of St. Cosmas — a highly trained medical corps bound by a modified Hippocratic Oath to save any wounded soldier of the Faith, while dispatching fallen enemies without mercy. Armed with a combat surgical knife that doubles as a Misericordia, and carrying battlefield drugs that can get gravely wounded soldiers back on their feet long enough to complete their mission."
+  },
+  {
+    "name": "witchburner",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Field officers of the Inquisition, tasked with hunting down witches, warlocks, and heretics beyond the reach of conventional justice. On the battlefield they channel divine retribution through words of condemnation alone, causing sinners to spontaneously burst into flames. Since none are without sin, none are truly safe from their judgement."
+  },
+  {
+    "name": "communicant_anti_tank_hunter",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Volunteers who underwent Chemical Communion — an infusion of synthesised Meta-Christ blood — emerging 10 to 13 feet tall with superhuman strength and durability. They wield massive anti-materiel rifles firing thrice-blessed 50mm shells capable of destroying vehicles, heavy armour, and fortifications in a single shot. Some lose higher brain functions to the divine choir only they can hear, requiring handlers to relay commands."
+  },
+  {
+    "name": "mendelist_ammo_monk",
+    "faction": "principality_of_new_antioch; trench_pilgrims",
+    "allegiance": "faithful",
+    "type": "mercenary",
+    "description": "Brothers of the Brotherhood of Blessed Munitions, a sub-sect of the Mendelist Order. They supply the faithful with ammunition treated with the chemically altered blood of a Meta-Christ — highly unstable compounds whose formulae are jealously guarded secrets. They brave enemy fire on the front lines to keep the Wrath of the Lord flowing into the guns of the Faithful, under the patronage of St. Barbara."
+  }
+]
