@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from .database import Base, engine, SessionLocal
-from .routers import items, currency, search, units
+from .routers import items, currency, search, units, factions
 from .routers.unit_router_factory import make_unit_router
 from . import crud
 
@@ -26,6 +26,7 @@ def startup_seed():
         crud.seed_units_heretic(db)
         crud.seed_units_court(db)
         crud.seed_units_cult(db)
+        crud.seed_factions(db)
         print("[startup] seed complete")
     finally:
         db.close()
@@ -44,7 +45,7 @@ app.include_router(items.router)
 app.include_router(currency.router)
 app.include_router(search.router)
 app.include_router(units.router)
-
+app.include_router(factions.router)
 
 # --- FACTION's UNITS ROUTES -----------------------------------------------------------------------
 app.include_router(make_unit_router(
@@ -100,7 +101,5 @@ app.include_router(make_unit_router(
     
     seed_fn=crud.seed_units_iron_sultanate,
 ))
-
-## --- GET ALL UNITS -------------------------------------------------------------
 
 

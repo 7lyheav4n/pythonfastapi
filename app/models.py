@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, UniqueConstraint
+from sqlalchemy.dialects.postgresql import JSONB
 from .database import Base
 
 # --------- items tables ---------------------------------------------
@@ -95,3 +96,22 @@ class UnitIronSultanate(Base):
     type        = Column(String, nullable=False)
     description = Column(String, nullable=True)
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_sultanate_name_faction"),)
+    
+    
+class Factions(Base):
+    __tablename__ = "factions"
+    
+    id          = Column(String, primary_key=True) # "iron_sultanate" from JSON id field
+    name        = Column(String, nullable=False)
+    full_name   = Column(String, nullable=True)    # only some factions have this
+    affiliation = Column(String, nullable=False)   # must be "faithful" or "heretic"
+    religion    = Column(String, nullable=True)
+    capital     = Column(String, nullable=True)
+    language    = Column(JSONB,  nullable=True)    # array of strings
+    currency    = Column(String, nullable=True)
+    description = Column(String, nullable=True)
+    government  = Column(JSONB,  nullable=True)    # nested object varies per faction
+    sub_factions= Column(JSONB,  nullable=True)    # sub_factions / sub_forces / processions
+    units       = Column(JSONB,  nullable=True)    # {elites: [], troops: [], mercenaries: []}
+    lore        = Column(JSONB,  nullable=True)    # catch-all for unique per-faction fields
+    

@@ -84,17 +84,7 @@ def _create_unit(db: Session, model, unit: schemas.UnitCreate):
     db.refresh(db_unit)
     return db_unit
  
-def _get_units_by_faction(db: Session, model, factions: list[str]):
-    filters = [model.faction.ilike(f"%{f}%") for f in factions]
-    return db.query(model).filter(or_(*filters)).all()
- 
-def _get_all_factions(db: Session, model):
-    rows = db.query(model.faction).distinct().all()
-    factions = set()
-    for row in rows:
-        for f in row[0].split(";"):
-            factions.add(f.strip())
-    return sorted(factions)
+
  
 ## --- GET ALL UNITS -----------------------------------------------
 
@@ -200,6 +190,70 @@ def get_currencies(db: Session):
     return db.query(models.Currency).all()
 
 
+# --------------------- FACTION CRUD -----------------------------------------------
 
+# _LORE_KEYS_ = {
+#     "fortifications", "sub_forces", # new anitoch (assets,  allies)
+#     "the_iron_wall", "takwin", # iron sultanate (assets, allies)
+#     "processions",             # trench pilgrims (assets)
+#     "countermeasures",         # cult of black grail (against)
+#     "goetic_powers"            # court of seven headed (attack)
+# }
 
+_LORE_KEYS = {
+    "the_iron_wall", "takwin",           # iron sultanate
+    "fortifications",                    # new antioch
+    "goetic_powers",                     # court of seven headed
+    "countermeasures",                   # cult of black grail
+}
 
+def _parse_faction(data: dict) -> dict:
+    lore = {k: data.pop(k) for k in list(data.keys()) if k in _LORE_KEYS}
+    # normalise sub_factions key — json files use sub_factions / sub_forces / processions
+    for key in ("sub_forces", "processions"):
+        if key in data:
+            data["sub_factions"] = data.pop(key)
+    if lore:
+        data["lore"] = lore
+    return data
+ 
+def seed_factions(db: Session):
+    files = [
+        "lore/faction_iron_sultanate.json",
+        "lore/faction_principality_of_new_antioch.json",
+        "lore/faction_trench_pilgrims.json",
+        "lore/faction_court_of_the_seven_headed_serpent.json",
+        "lore/faction_cult_of_the_black_grail.json",
+        "lore/faction_heretic_legion.json"
+    ]
+    inserted = []
+    for filename in files:
+        raw = load_seed(filename)
+        if not raw:
+            continue
+        data = _parse_faction(dict(raw))
+        exists = db.query(models.Factions).filter(models.Factions.id == data["id"]).first()
+        if not exists:
+            db.add(models.Factions(**data))
+            inserted.append(data["id"])
+    db.commit()
+    return inserted
+ 
+def get_factions(db: Session):
+    return db.query(models.Factions).all()
+ 
+def get_faction_by_id(db: Session, faction_id: str):
+    return db.query(models.Factions).filter(models.Factions.id == faction_id).first()
+ 
+def get_factions_by_affiliation(db: Session, affiliation: str):
+    return db.query(models.Factions).filter(
+        models.Factions.affiliation.ilike(f"%{affiliation}%")
+    ).all()
+ 
+def create_faction(db: Session, faction: schemas.FactionCreate):
+    data = _parse_faction(dict(faction.model_dump()))
+    db_faction = models.Factions(**data)
+    db.add(db_faction)
+    db.commit()
+    db.refresh(db_faction)
+    return db_faction

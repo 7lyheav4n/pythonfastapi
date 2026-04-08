@@ -18,8 +18,6 @@ def make_unit_router(
     tag: str,
     get_all: Callable,
     create: Callable,
-    by_faction: Callable,
-    get_factions: Callable,
     seed_fn: Callable,
 ) -> APIRouter:
     router = APIRouter(prefix=prefix, tags=[tag])

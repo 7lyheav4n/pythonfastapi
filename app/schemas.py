@@ -1,4 +1,4 @@
-from locale import currency
+from typing import Any
 from pydantic import BaseModel
 
 # ------- Items --------------------------------------------------------
@@ -49,6 +49,26 @@ class UnitResponse(UnitBase):
 
 
 # ------- FACTIONS --------------------------------------------------------
+class FactionsBase(BaseModel):
+    id: str
+    name: str
+    full_name: str         | None = None
+    affiliation: str
+    religion: str          | None = None
+    capital: str           | None = None
+    language: list[str]    | None = None
+    currency: str          | None = None
+    description: str       | None = None
+    government: dict[str, Any]   | None = None
+    sub_factions: dict[str, Any] | None = None
+    units: dict[str, Any]        | None = None
+    lore: dict[str, Any]         | None = None
 
+class FactionCreate(FactionsBase):
+    pass
+
+class FactionResponse(FactionsBase):
+    class Config:
+        from_attribute = True
 
 # ------- NONE --------------------------------------------------------
