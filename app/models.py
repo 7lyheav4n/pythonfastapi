@@ -4,7 +4,7 @@ from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import relationship
 from .database import Base
 
-# --------- items tables ---------------------------------------------
+# --------- items table ---------------------------------------------
 
 class Item(Base):
     __tablename__ = "items"
@@ -34,18 +34,18 @@ class Factions(Base):
     units       = Column(JSONB,  nullable=True)    # {elites: [], troops: [], mercenaries: []}
     lore        = Column(JSONB,  nullable=True)    # catch-all for unique per-faction fields
     
-# --------- Tables Relationship ORM ---------------------------------------------
-currencies          = relationship("Currency",              back_populates="faction_rel")
-units_court         = relationship("UnitCourtOfSevenHeaded",back_populates="faction_rel")
-units_cult          = relationship("UnitCultOfBlackGrail",  back_populates="faction_rel")
-units_heretic       = relationship("UnitHereticLegion",     back_populates="faction_rel")
-units_new_antioch   = relationship("UnitNewAntioch",        back_populates="faction_rel")
-units_pilgrims      = relationship("UnitTrenchPilgrims",    back_populates="faction_rel")
-units_sultanate     = relationship("UnitIronSultanate",     back_populates="faction_rel")
+    # --------- Tables Relationship ORM ---------------------------------------------
+    currencies          = relationship("Currency",              back_populates="faction_rel")
+    units_court         = relationship("UnitCourtOfSevenHeaded",back_populates="faction_rel")
+    units_cult          = relationship("UnitCultOfBlackGrail",  back_populates="faction_rel")
+    units_heretic       = relationship("UnitHereticLegion",     back_populates="faction_rel")
+    units_new_antioch   = relationship("UnitNewAntioch",        back_populates="faction_rel")
+    units_pilgrims      = relationship("UnitTrenchPilgrims",    back_populates="faction_rel")
+    units_sultanate     = relationship("UnitIronSultanate",     back_populates="faction_rel")
 
 
 
-# ---------  currency tables ---------------------------------------------
+# ---------  currency table ---------------------------------------------
 class Currency(Base):
     __tablename__ = "currency"
     
