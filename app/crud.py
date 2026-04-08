@@ -53,6 +53,8 @@ def seed_currency(db: Session):
             inserted.append(data["coinage"])
     db.commit()
     return inserted
+def seed_units_court(db: Session):
+    return _seed_unit_table(db, models.UnitCourtOfSevenHeaded, "units/court_of_the_seven_headed_units.json", "court_of_the_seven_headed_serpent")
 
 def seed_units_cult(db: Session):
     return _seed_unit_table(db, models.UnitCultOfBlackGrail, "units/cult_of_black_grail_units.json", "cult_of_the_black_grail")

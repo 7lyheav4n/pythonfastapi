@@ -13,24 +13,6 @@ app = FastAPI(title="New Antioch API", redirect_slashes=False)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
-# --- START UP SEEDING -----------------------------------------------------------------------
-@app.on_event("startup")
-def startup_seed():
-    db = SessionLocal()
-    try:
-        crud.seed_items(db)
-        crud.seed_currency(db)
-        crud.seed_units_new_antioch(db)
-        crud.seed_units_trench_pilgrims(db)
-        crud.seed_units_iron_sultanate(db)
-        crud.seed_units_heretic(db)
-        crud.seed_units_court(db)
-        crud.seed_units_cult(db)
-        crud.seed_factions(db)
-        print("[startup] seed complete")
-    finally:
-        db.close()
-
 # --- STATIC ROUTE -----------------------------------------------------------------------
 @app.get("/")
 def root():
@@ -53,8 +35,8 @@ app.include_router(make_unit_router(
     tag="court of the seven headed serpent",
     get_all=crud.get_units_court,
     create=crud.create_unit_court,
-    
-    seed_fn=crud.seed_units_court,
+
+    seed_fn=crud.seed_units_court
 ))
  
 app.include_router(make_unit_router(
@@ -63,7 +45,7 @@ app.include_router(make_unit_router(
     get_all=crud.get_units_cult,
     create=crud.create_unit_cult,
     
-    seed_fn=crud.seed_units_cult,
+    seed_fn=crud.seed_units_cult
 ))
  
 app.include_router(make_unit_router(
@@ -103,3 +85,20 @@ app.include_router(make_unit_router(
 ))
 
 
+# --- START UP SEEDING -----------------------------------------------------------------------
+@app.on_event("startup")
+def startup_seed():
+    db = SessionLocal()
+    try:
+        crud.seed_items(db)
+        crud.seed_currency(db)
+        crud.seed_units_new_antioch(db)
+        crud.seed_units_trench_pilgrims(db)
+        crud.seed_units_iron_sultanate(db)
+        crud.seed_units_heretic(db)
+        crud.seed_units_court(db)
+        crud.seed_units_cult(db)
+        crud.seed_factions(db)
+        print("[startup] seed complete")
+    finally:
+        db.close()
