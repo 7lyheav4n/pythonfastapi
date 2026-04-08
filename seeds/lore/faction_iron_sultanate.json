@@ -1,0 +1,28 @@
+{
+  "id": "iron_sultanate",
+  "name": "Iron Sultanate",
+  "full_name": "The Great Sultanate of the Invincible Iron Wall of the Two Horns that pierce the Sky",
+  "affiliation": "faithful",
+  "religion": "Islam",
+  "capital": "Baghdad",
+  "language": ["Arabic", "Turkish", "Various Islamic-majority languages"],
+  "currency": "Dinar (gold) and Drachm (silver) — minted by the House of Wisdom alchemists with extraordinary purity and craftsmanship. Debasers are hanged and disembowelled simultaneously.",
+  "government": {
+    "type": "Sultanate Hereditary Monarchy",
+    "leader_titles": "Sultan (Padishah of Rum, Shadow of God on Earth, Custodian of the Invincible Iron Wall)",
+    "current_leader": "Malik 'Lion Padishah' (1902–Present)",
+    "former_leader": "Selim (Formerly)"
+  },
+  "description": "The Iron Sultanate is the largest nation of Islamic Faith in the Middle East — a mighty power that arose from the catastrophe of the Gate of Hell opening in 1099. When the Infidels released Gog and Magog upon the world, the great Iron Wall of Dhu al-Qarnayn manifested in the lands of the Sultan of Rum, and a second great Migration of the Faithful brought millions of Muslims across Europa, Asia, and Africa to safety behind it — at terrible cost, as Heretic forces devoured entire columns on the road. Once the survivors were within, the Gates were sealed and the Sultanate was born. The Wall itself is the greatest defensive work in the world, festooned with the famed artillery of the Sultan and garrisoned by Azeb sharpshooters and Janissary regiments. The Sultanate fights not only to defend the Wall but to hunt apostates, recover lost relics of the Prophets, and reclaim the fallen knowledge of the great Caliphates.",
+  "the_iron_wall": "The mightiest defensive structure in the world — a bulwark of legendary scale armed with titanic cannons and manned around the clock. Azeb sharpshooters stand watch, Janissaries garrison barracks at intervals, and the House of Wisdom unleashes its Takwin creations against any serious incursion. It has held for centuries against the forces of Hell.",
+  "sub_factions": {
+    "Fidai_of_Alamut": "An independent order of assassins serving under the Old Man of the Mountain, operating from the onyx fortress of Alamut the Unconquerable. Although their Ismaili sect is viewed as heretical by many within the Sultanate, a pact between Sultan and Mountain ensures they fight for the Faithful.",
+    "House_of_Wisdom": "The pre-eminent centre of learning in the Sultanate — libraries, workshops, forges, hospitals, observatories, and secret laboratories where Jabirean Alchemists create the Lions of Jabir and other Takwin war-beasts. It also maintains the Sultanate's fleet of airships."
+  },
+  "takwin": "The Jabirean alchemical process of creating artificial life — used to produce the Lions of Jabir, the Brazen Bulls, and other unique war-beasts that serve as the Sultanate's answer to the demons of Hell.",
+  "units": {
+    "elites": ["yuzbaşi_captain", "jabirean_alchemist", "sultanate_assassin"],
+    "troops": ["azeb", "sultanate_sapper", "lion_of_jabir", "janissary", "brazen_bull"],
+    "mercenaries": ["mamluk_faris"]
+  }
+}

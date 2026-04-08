@@ -1,0 +1,30 @@
+{
+  "id": "principality_of_new_antioch",
+  "name": "Principality of New Antioch",
+  "affiliation": "faithful",
+  "religion": "New Syncretic Orthodox Christianity",
+  "capital": "New Antioch (Northern Levant — built atop the ruins of ancient Antioch, destroyed by demonic weapon in 1545)",
+  "language": ["Sabir (Lingua Franca)", "Multi-lingual — soldiers from across Christendom"],
+  "currency": "Ducat (the most traded currency among the Faithful nations)",
+  "government": {
+    "type": "Feudal Elective Monarchy",
+    "leader_titles": "Duke of New Antioch / Supreme Commander of all Faithful forces in the Levant",
+    "current_leader": "Duke Constantine XI",
+    "legislature": "Elected by leaders of the Faithful world; overseen by the Princes of the Church"
+  },
+  "description": "The Principality of New Antioch is the last Christian fortress in the Holy Land and the front line of the entire Great War. Built in 1559 AD by order of the Sword Congress of Vienna atop the crater left by the demonic weapon that obliterated the original city, it is funded by a mandatory tithe from all Faithful nations — one tenth of yearly revenue, paid in supplies, soldiers, and coin. Its walls have survived eight sieges and have never been breached. If New Antioch falls, the Levant falls — and with it, Europe and Africa lie exposed. Within its walls soldiers from every corner of Christendom serve side by side: Polish-Lithuanians, Byzantines, Ethiopians, Prussians, Arabs, and more. The Principality fields the full spectrum of the Church's military technology — from common Yeomen to chemically enhanced Mechanized Heavy Infantry — and coordinates sub-forces from across the Christian world.",
+  "fortifications": "New Antioch's walls are armed with 77 great towers, garrisoned day and night by anchorites and devout soldiers. A concrete sarcophagus at the city's heart contains the remnants of the demonic blast crater. Buildings are predominantly precast concrete panels moulded with ornate gothic motifs, covered in memorial plaques to the fallen.",
+  "sub_forces": {
+    "Red_Brigade": "Volunteers who have lost someone to the Great War, founded by St. Ernest after surviving the massacre of Acre alone. The Duke's personal special operations unit, used for the most dangerous missions. Their blood-red armour is redistributed to each new recruit as a tangible link to the fallen.",
+    "Papal_States_Intervention_Force": "The Supreme Pontiff's personal army in New Antioch, dispatched to eliminate heretic leaders and retrieve holy artefacts.",
+    "Stosstrupppen_of_the_Free_State_of_Prussia": "Elite assault troops who often operate in deep forward positions carrying secret orders from the Princes of the Church.",
+    "Kingdom_of_Alba_Assault_Detachment": "Warriors from the Scottish Highlands seeking glory, absolution, and loot — above all, a chance to fight devil-worshippers.",
+    "Eire_Rangers": "Irish fighters serving under the banner of the Principality.",
+    "Expeditionary_Forces_of_Abyssinia": "Coalition forces fighting to contain Mammon's Legion of Ten Golden Horns along the Nile front."
+  },
+  "units": {
+    "elites": ["lieutenant", "trench_cleric", "sniper_priest"],
+    "troops": ["yeoman", "shocktrooper", "combat_engineer", "mechanized_heavy_infantry", "combat_medic"],
+    "mercenaries": ["witchburner", "communicant_anti_tank_hunter", "mendelist_ammo_monk"]
+  }
+}

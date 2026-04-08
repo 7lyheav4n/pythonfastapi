@@ -1,0 +1,25 @@
+{
+  "id": "heretic_legion",
+  "name": "Heretic Legion",
+  "affiliation": "heretic",
+  "religion": "Infernal — worship of Arch-Devils and Satan",
+  "capital": "Various damned cities and domains beyond the Hellgate",
+  "language": ["Various — all tongues corrupted by damnation"],
+  "currency": "Silver Coins (tarnished by the taint of Hell, bearing text extolling Judas's betrayal)",
+  "government": {
+    "type": "Theocratic Warlordism under Arch-Devil patronage",
+    "leader_titles": "Various — High Captains, Legion Commanders, Anointed",
+    "patrons": ["Satan", "Mammon", "Beelzebub", "Various Arch-Devils"]
+  },
+  "description": "The Heretic Legion is the main military force of Satan on Earth, raised from the one third of humanity that has bent the knee to the idols of Hell. Their teeming cities are built in lands abandoned by God — factories of mutilated flesh and metal forge endless munitions, sacrificial altars run with the blood of captives, and entire populations are dedicated to bringing down the Throne of Heaven. To join the Legions, a recruit must make an unholy pilgrimage to the burning bronze gates of Hell itself. Those who survive are branded with the mark of their patron Arch-Devil and bound in unbreakable vows of eternal damnation. Hell also sends its own abhorrent progeny to reinforce the mortal soldiery — nightmarish war beasts and Artillery Witches who act as mobile fire support.",
+  "sub_factions": {
+    "Naval_Raiding_Party": "A semi-autonomous Heretic Fleet commanded by High Captains, maintaining naval supremacy across most of the Seven Seas. They strike at dawn in honour of Lucifer the Morningstar, using Behemoth Capital Ships, fast strike craft, and submarines to terrorise coastal settlements and shipping lanes.",
+    "Trench_Ghosts": "Heretics who died on hallowed ground and were claimed by neither Heaven nor Hell. Semi-corporeal undead, they wage endless war against all living creatures in No Man's Land — Faithful and Heretic alike — driven by bottomless hatred and an undimmed greed for worldly wealth.",
+    "Knights_of_Avarice": "A Heretic Legion exclusively serving Mammon, Arch-Devil of Greed. Festooned in gold and silk, they wage war as a religious compulsion — stripping every battlefield of valuables down to the flesh of the dead, cataloguing and carrying off all wealth to the underground treasury-temples of Mammon."
+  },
+  "units": {
+    "elites": ["heretic_priest", "heretic_death_commando", "heretic_chorister"],
+    "troops": ["heretic_trooper", "anointed_heavy_infantry", "war_wolf_assault_beast", "artillery_witch", "wretched"],
+    "mercenaries": ["sin_eater", "goetic_warlock"]
+  }
+}

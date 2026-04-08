@@ -1,3 +1,4 @@
+from locale import currency
 from pydantic import BaseModel
 
 # ------- Items --------------------------------------------------------
@@ -45,6 +46,9 @@ class UnitResponse(UnitBase):
     id: int
     class Config:
         from_attributes = True
+
+
+# ------- FACTIONS --------------------------------------------------------
 
 
 # ------- NONE --------------------------------------------------------

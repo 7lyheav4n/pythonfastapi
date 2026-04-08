@@ -1,0 +1,98 @@
+[
+  {
+    "Factions": {
+      "Faithful": {
+        "New_Syncretic_Orthodox_Church":{
+          "affiliation":"faithful",
+          "religion":"Syncretic Orthodox Christianity",
+          "capital":["Vatican City", "Rome", "Papal States"],
+          "language":["Latin", "various"],
+          "government":{
+            "type":"Absolute Elective Monarchy",
+            "leader_titles":"Supreme Pontiff (Pope)",
+            "legislature":["Princes of the Church", "Council of Saints (Advisory)"]
+          },
+          "divisions":{
+            "Papal_States_Intervention_Force":"The Supreme Pontiff's personal army in New Antioch, dispatched to eliminate heretic leaders and retrieve holy artifacts.",
+            "Synod_of_Strategic_Prophecy":"An Order of Monks dedicated to receiving and deciphering the word of God."
+          },
+          "description":"The New Syncretic Orthodox Church, simply the Church, or colloquially the Faithful, is the collective faction for the nations of Christianity. This branch of Christianity was created after the beginning of Great War in 1099. It is the unification of all the major branches of Christianity of Europe into a single entity. This extremely zealous organization has a very strict doctrine, deviation from which risks summary execution. With few exceptions, it is near impossible for a sect or branch to be approved by the Princes of the Church or the Supreme Pontiff. The Primary holy text of the Church is the New Syncretic Orthodox Bible (NSOV), which was created sometime after 1099 alongside the church.",
+          "nations": [
+            "amsterdam",
+            "athens",
+            "castile_aragon_union",
+            "crown_of_england",
+            "free_state_of_prussia",
+            {
+              "holy_roman_empire": [
+                "bavaria",
+                "duchy_of_saxony",
+                "tuscany",
+                "switzerland",
+                "verona"
+              ]
+            },
+            "kingdom_of_alba",
+            "kingdom_of_eire",
+            "kingdom_of_hungary",
+            "kingdom_of_numidia",
+            "kingdom_of_portugal",
+            {
+              "kalmar_union": [
+                "denmark",
+                "finlandia",
+                "sweden_goth_land",
+                "norway"
+              ]
+            },
+            "papal_states",
+            "polish_lithuanian_commonwealth",
+            {
+              "principality_of_kyiv": [
+                "cossacks",
+                "kyivan_rus"
+              ]
+            },
+            "principality_of_new_antioch",
+            {
+              "royal_demesne_of_france": [
+                "aquitaine",
+                "duchy_of_brittany",
+                "duchy_of_normandy",
+                "toulouse"
+              ]
+            },
+            "solomonic_empire_of_abyssinia",
+            "state_of_the_teutonic_order",
+            "empire_of_trebizond",
+            {
+              "tsardom_of_novgorod": [
+                "kingdom_of_perm"
+              ]
+            }
+          ]
+        }
+      },
+      "Heretic":{
+        "Hell":{
+          "affiliation":"heretic",
+          "religion":"Infernal Realm Worships",
+          "capital":"Circles of Hell",
+          "language":["hellish", "various"],
+          "description":"Hell is a infernal realm of the demons, the damned and the heretics. It is a place where God banished Lucifer Morningstar and his fallen angels after their rebellion against him. While Lucifer and his demon princes rule over hell, their rules are not absolute since even them fear the realm itself as they and their heretical followers are not the first one to dwell in there.",
+          "circles_of_hell":[
+            "1st Circle (Limbo) - EMPTY",
+            "2nd Circle (Lust) - Described as having demon philosophers. The Domain of the Demon Prince of Lust Asmodeus.",
+            "3rd Circle (Gluttony) - Contains hellish death factories where all manner of war machines are crafted, from the Infernal Bombs summoned by the Artillery Witches, to the horrific Goetic Warlocks.",
+            "4th Circle (Greed) - Contains the coffers and gold hoards of the Bank of Mammon.",
+            "5th Circle (Wrath) - Described as full of foetid swamps and bogs and with devil alchemists adept at weaponizing the toxic fumes.",
+            "6th Circle (Heresy) - The territory in which Moloch's Palace is located.",
+            "7th Circle (Violence) - The territory of Beelzebub, who dwells within the fetid city of Ekron. Also contains the training barracks of the Heretic Death Commandos. The lake of fire is located inside this circle.",
+            "8th Circle (Fraud) - EMPTY",
+            "9th Circle (Treachery) - EMPTY"
+          ]
+        }
+      }
+    }
+  }
+]

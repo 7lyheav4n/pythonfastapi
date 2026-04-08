@@ -1,0 +1,24 @@
+{
+  "id": "cult_of_the_black_grail",
+  "name": "Cult of the Black Grail",
+  "affiliation": "heretic",
+  "religion": "Infernal — worship of Beelzebub, Lord of the Flies",
+  "capital": "Ekron, the fetid city of Beelzebub (7th Circle of Hell)",
+  "language": ["Various — corrupted by plague and demonic essence"],
+  "currency": "None — the Cult subsists on loot, trophies, and offerings to the altars of Beelzebub",
+  "government": {
+    "type": "Theocratic plague-cult led by the Order of the Fly",
+    "leader_titles": "Lord of Tumours, Plague Knight",
+    "patron": "Beelzebub, Lord of the Flies — 7th Circle, the domain of Violence"
+  },
+  "description": "The Cult of the Black Grail is not an army in any conventional sense — it is a living plague unleashed periodically by Beelzebub when he gains supremacy in Hell's power struggles. Infused with demonic essence from the 7th layer of Hell, the Black Grail erupts as a tidal wave of hell-flies, scorpions, locusts, and infernal insects that consumes everything in its path. It is indiscriminate: infections spread to virtually any biological matter, causing tumours, boils, and weeping pustules. Bodies of men, horses, dogs, and insects that succumb lurch back to their feet, driven by demonic will — not living, not dead — and form warbands that spread corruption ever further. At their head stand the knights of the Order of the Fly: the most depraved men and women who willingly embraced the Black Grail and were spared their minds by Beelzebub in exchange for eternal devotion and sacrifice.",
+  "sub_factions": {
+    "Dirge_of_the_Great_Hegemon": "Servants of once-great Black Grail Hegemons, carrying on the traditions of fallen lords of the Cult."
+  },
+  "countermeasures": "The only known answer is to burn infected settlements with specially-constructed flamethrower tanks using holy anointing oil as fuel. Scientist-Priests of the Church and Alchemists of the Sultanate have thus far failed to develop any inoculation.",
+  "units": {
+    "elites": ["lord_of_tumours", "plague_knight", "corpse_guard"],
+    "troops": ["hound_of_the_black_grail", "grail_thrall", "herald_of_beelzebub", "amalgam"],
+    "mercenaries": ["sin_eater"]
+  }
+}

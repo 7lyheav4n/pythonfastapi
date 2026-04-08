@@ -1,0 +1,29 @@
+{
+  "id": "court_of_the_seven_headed_serpent",
+  "name": "Court of the Seven-Headed Serpent",
+  "affiliation": "heretic",
+  "religion": "Infernal — direct service to the Seven Arch-Devils of the Deadly Sins",
+  "capital": "The Iron City of Dis, Hell",
+  "language": ["Infernal", "Various"],
+  "currency": "None — demons deal in souls, sacrifices, and mortal suffering",
+  "government": {
+    "type": "Infernal Oligarchy — rotating War Council of Seven Arch-Devils",
+    "leader_titles": "Serpent Head (one per Deadly Sin)",
+    "current_heads": {
+      "wrath": "Abaddon, Great Prince of Wrath — The Iron Curule",
+      "envy": "Moloch, Demon Prince of Envy — The Black Klismos",
+      "pride": "Eligos, Great Duke of Hell — The High Cathedra",
+      "gluttony": "Vacant (Beelzebub rejects his seat, waging war via the Black Grail) — The Hungry Throne",
+      "greed": "Mammon, Arch-Devil of Greed — The Golden Seat",
+      "sloth": "Currently Unknown — The Silk Bed",
+      "lust": "Currently Unknown — The Flesh Divan"
+    }
+  },
+  "description": "The Court of the Seven-Headed Serpent is Hell's direct military arm on Earth — the seven most wicked and cunning Arch-Devils, each representing one of the Seven Deadly Sins, sitting in the black keep of the Iron City of Dis and directing the Great War against Creation. Unlike the mortal Heretic Legions, the Court's soldiers are beings of both the material and spirit worlds, able to march on Earth without triggering divine retribution under the Covenant of Hell. The Court deliberately limits its warband sizes so that most suffering falls on mortals, both to spite God and to wax their own power as His plan is disrupted. Their missions defy mortal military logic — a mighty Praetor may strike a militarily insignificant village solely to kill a future saint, or betray its own Heretic allies on a whim.",
+  "goetic_powers": "Many Court warriors wield Goetic spells powered by mortal suffering. As God's plan is disrupted, primordial energy is released that demons can briefly bend to alter reality — but God's omnipotence reasserts itself quickly, creating a constant hunger for fresh sacrifices, pain, and warfare to sustain their supernatural abilities.",
+  "units": {
+    "elites": ["praetor", "auxilia_sorcerer", "hunter_of_the_left_hand_path", "hell_knight"],
+    "troops": ["yoke_fiend", "wretched", "pit_locust", "desecrated_saint"],
+    "mercenaries": ["sin_eater", "goetic_warlock"]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "trench_pilgrims",
+  "name": "Trench Pilgrims",
+  "affiliation": "faithful",
+  "religion": "Orthodox Syncretic Christianity (unsanctioned zealot processions)",
+  "capital": "None — nomadic processions across the battlefields",
+  "language": ["Various"],
+  "currency": "Ducat",
+  "government": {
+    "type": "Theocratic Procession — loose bands led by divinely-touched Prophets and Prophetesses",
+    "leader_titles": "Prophet / Prophetess",
+    "note": "Not officially sanctioned by the Holy See of New Antioch, though the Church still blesses their crusades"
+  },
+  "description": "The Trench Pilgrims are not an organised military force but a spiritual phenomenon — a constant stream of the mad, the maimed, the God-touched, and the guilt-ridden who gather around Prophets and Prophetesses and hurl themselves at the Heretics with unrivalled zeal. They are men and women with little military training who consider it their sacred duty to make pilgrimage to the sacred battlefields. Armed with anything they can find — from ancient muskets to scourges and Molotov Cocktails — they cross No Man's Land in suicidal assaults directed by prophetic visions. Their iron capirotes shield their minds from the horrors of Hell, and death is not necessarily the end: the Seventh Meta-Christ may deem a fallen pilgrim worthy and resurrect them as a Martyr-Penitent, a warrior half-way between Heaven and Earth, immune to the pain of bullet or bayonet.",
+  "processions": {
+    "Path_of_Pious_Revenge": "Swears in the name of St. Olga. Fights with flamethrowers, burning grenades, and incendiary ammunition.",
+    "Pilgrims_of_the_Iron_Path": "Follow St. Rita of Cascia. Fight with hammers, mauls, maces, and cudgels, and hammer nails into their own heads in memory of their saint.",
+    "Theban_Legion_of_Rome": "Carry the severed heads of heretics on their standards in honour of St. Marice. Fight with blades and compete for the highest kill count.",
+    "Procession_of_the_Sacred_Affliction": "Known for zeal in close combat. Their icon-decorated armour and saint-adorned shields withstand machine gun fire despite appearances. They carry millstones to drown sinners in the mud of No Man's Land. They reject the Iron Capirote, believing faith alone is sufficient.",
+    "War_Pilgrimage_of_St_Methodius": "Follow the ancient Orthodox creed of St. Methodius. Reject the Communicant programme as heresy, condemn martyrdom devices as sinful suicide, and hold to strict doctrinal purity. March eternally toward the Holy City of Trebizond.",
+    "Cavalcade_of_the_Tenth_Plague": "Sacrifice lambs before battle and anoint themselves in the blood, drawing holy symbols on their bodies and armour, believing the blood of the Lamb shields them from all harm."
+  },
+  "units": {
+    "elites": ["war_prophet", "castigator", "communicant"],
+    "troops": ["trench_pilgrim", "ecclesiastic_prisoner", "stigmatic_nun", "shrine_anchorite"],
+    "mercenaries": ["combat_medic", "witchburner", "communicant_anti_tank_hunter", "mendelist_ammo_monk"]
+  }
+}

@@ -55,22 +55,22 @@ def seed_currency(db: Session):
     return inserted
 
 def seed_units_court(db: Session):
-    return _seed_unit_table(db, models.UnitCourtOfSevenHeaded, "court_of_seven-headed_units.json")
+    return _seed_unit_table(db, models.UnitCourtOfSevenHeaded, "units/court_of_seven-headed_units.json")
  
 def seed_units_cult(db: Session):
-    return _seed_unit_table(db, models.UnitCultOfBlackGrail, "cult_of_black_grail_units.json")
+    return _seed_unit_table(db, models.UnitCultOfBlackGrail, "units/cult_of_black_grail_units.json")
  
 def seed_units_heretic(db: Session):
-    return _seed_unit_table(db, models.UnitHereticLegion, "heretic_legion_units.json")
+    return _seed_unit_table(db, models.UnitHereticLegion, "units/heretic_legion_units.json")
  
 def seed_units_new_antioch(db: Session):
-    return _seed_unit_table(db, models.UnitNewAntioch, "new_antioch_units.json")
+    return _seed_unit_table(db, models.UnitNewAntioch, "units/new_antioch_units.json")
  
 def seed_units_trench_pilgrims(db: Session):
-    return _seed_unit_table(db, models.UnitTrenchPilgrims, "trench_pilgrim_units.json")
+    return _seed_unit_table(db, models.UnitTrenchPilgrims, "units/trench_pilgrim_units.json")
  
 def seed_units_iron_sultanate(db: Session):
-    return _seed_unit_table(db, models.UnitIronSultanate, "iron_sultanate_units.json")
+    return _seed_unit_table(db, models.UnitIronSultanate, "units/iron_sultanate_units.json")
 
 
 # --- Generic unit CRUD helper -------------------------------------------------------

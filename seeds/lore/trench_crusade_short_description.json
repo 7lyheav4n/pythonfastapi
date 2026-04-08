@@ -1,0 +1,24 @@
+{
+  "factions": {
+    "description": "After the First Heresy in 1099 AD, when the Knights Templar opened the Gate of Hell beneath Jerusalem and unleashed the armies of Lucifer upon the mortal world, humanity was shattered into opposing sides. For eight centuries the Great War has raged across a landscape of endless trenches, craters, and blasted no man's land. Both sides wield terrifying weaponry alongside supernatural beings of immense power, and yet the conflict remains a grinding stalemate. Every soul on Earth is drawn into the war — whether by faith, damnation, corruption, or desperation.",
+    "sides": {
+      "faithful": {
+        "overview": "The Faithful are the collective nations, factions, and individuals who stand against the forces of Hell in defence of God's Creation. They are bound not by a single creed or culture but by a shared belief in the Almighty — whether as the Christian God of the New Syncretic Orthodox Church, the Allah of the Iron Sultanate, or the God of Abyssinia's Solomonic Empire. Though they are co-belligerents against the common enemy, tensions, resentments, and outright conflicts between Faithful factions are common. The Faithful fight a war they did not start but cannot afford to lose — for if New Antioch falls, all of Europe and Africa fall with it. Their armies combine conventional soldiers with divine miracles, alchemical science, cloned holy flesh, and warriors who have walked the edges of Heaven itself.",
+        "factions": [
+          "new_syncretic_orthodox_church",
+          "principality_of_new_antioch",
+          "iron_sultanate",
+          "trench_pilgrims"
+        ]
+      },
+      "heretic": {
+        "overview": "The Heretics are the collective forces of Hell and the one third of humanity that has bent the knee to the Arch-Devils and their infernal lords. They are not a unified faction — the bitter political struggles of the Court of the Seven-Headed Serpent mean that Heretic warbands sometimes turn on each other as readily as they attack the Faithful. What unites them is their rejection of God, their service to one or more of the Princes of Hell, and their shared goal of bringing down the very Throne of Heaven. Their armies range from mortal human legionnaires who have made the pilgrimage to Hell's Gate, to plague-ridden abominations, to actual demons and fallen angels walking the Earth in defiance of the divine covenant.",
+        "factions": [
+          "heretic_legion",
+          "court_of_the_seven_headed_serpent",
+          "cult_of_the_black_grail"
+        ]
+      }
+    }
+  }
+}
