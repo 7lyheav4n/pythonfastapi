@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from ..database import SessionLocal
 from .. import crud, schemas
 
-router = APIRouter(prefix="/factions", tag=["factions"])
+router = APIRouter(prefix="/factions", tags=["factions"])
 
 def get_db():
   db = SessionLocal()

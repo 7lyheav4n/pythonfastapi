@@ -21,6 +21,7 @@ class CurrencyBase(BaseModel):
     coinage: str
     usage: str
     description: str | None = None
+    faction_id: str  | None = None
 
 class CurrencyCreate(CurrencyBase):
     pass
@@ -38,6 +39,7 @@ class UnitBase(BaseModel):
     allegiance: str
     type: str
     description: str | None = None
+    id: str          | None = None
 
 class UnitCreate(UnitBase):
     pass
