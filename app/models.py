@@ -35,7 +35,7 @@ class Factions(Base):
     lore        = Column(JSONB,  nullable=True)    # catch-all for unique per-faction fields
     
 # --------- Tables Relationship ORM ---------------------------------------------
-currency            = relationship("Currency",              back_populates="faction_rel")
+currencies          = relationship("Currency",              back_populates="faction_rel")
 units_court         = relationship("UnitCourtOfSevenHeaded",back_populates="faction_rel")
 units_cult          = relationship("UnitCultOfBlackGrail",  back_populates="faction_rel")
 units_heretic       = relationship("UnitHereticLegion",     back_populates="faction_rel")
@@ -55,7 +55,7 @@ class Currency(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="currency")
+    faction_rel = relationship("Factions", back_populates="currencies")
 
 
 # --------- Faction's unit tables --------------------------------------------- 
