@@ -40,12 +40,5 @@ def create_faction(faction: schemas.FactionCreate, db: Session = Depends(get_db)
     return crud.create_faction(db, faction)
  
 
-# ------- Seed (JSON file → DB) ---------------------------------------------------
-@router.post("/seed", summary="Seed all factions from JSON files")
-def seed_factions(db: Session = Depends(get_db)):
-    inserted = crud.seed_factions(db)
-    if inserted:
-        return {"message": "Seeded successfully", "inserted": inserted}
-    return {"message": "All factions already exist, nothing inserted"}
 
 

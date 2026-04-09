@@ -33,11 +33,3 @@ def make_unit_router(
     def create_unit(unit: schemas.UnitCreate, db: Session = Depends(get_db)):
         return create(db, unit)
 
-    @router.post("/seed", summary=f"Seed {tag} from JSON file")
-    def seed_units(db: Session = Depends(get_db)):
-        inserted = seed_fn(db)
-        if inserted:
-            return {"message": "Seeded successfully", "inserted": inserted}
-        return {"message": "All units already exist, nothing inserted"}
-
-    return router

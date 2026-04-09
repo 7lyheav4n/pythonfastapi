@@ -25,10 +25,3 @@ def create_currency(currency: schemas.CurrencyCreate, db: Session = Depends(get_
     return crud.create_currency(db, currency)
 
 
-# ------- Seed (JSON file → DB) -------------------------------------------------------
-@router.post("/seed", summary="Seed currency from seeds/currency.json")
-def seed_currency(db: Session = Depends(get_db)):
-    inserted = crud.seed_currency(db)
-    if inserted:
-        return {"message": "Seeded successfully", "inserted": inserted}
-    return {"message": "All currencies already exist, nothing inserted"}
