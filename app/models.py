@@ -17,7 +17,7 @@ class Item(Base):
 
     
 # --------- Factions table ---------------------------------------------
-class Factions(Base):
+class Faction(Base):
     __tablename__ = "factions"
     
     id          = Column(String, primary_key=True) # "iron_sultanate" from JSON id field
@@ -55,7 +55,7 @@ class Currency(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="currency")
+    faction_rel = relationship("Faction", back_populates="currency")
 
 
 # --------- Faction's unit tables --------------------------------------------- 
@@ -70,7 +70,7 @@ class UnitCourtOfSevenHeaded(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_court")
+    faction_rel = relationship("Faction", back_populates="units_court")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_court_name_faction"),)
  
@@ -86,7 +86,7 @@ class UnitCultOfBlackGrail(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_cult")
+    faction_rel = relationship("Faction", back_populates="units_cult")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_cult_name_faction"),)
  
@@ -102,7 +102,7 @@ class UnitHereticLegion(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_heretic")
+    faction_rel = relationship("Faction", back_populates="units_heretic")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_heretic_name_faction"),)
  
@@ -118,7 +118,7 @@ class UnitNewAntioch(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_new_antioch")
+    faction_rel = relationship("Faction", back_populates="units_new_antioch")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_new_antioch_name_faction"),)
  
@@ -150,7 +150,7 @@ class UnitIronSultanate(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_sultanate")
+    faction_rel = relationship("Faction", back_populates="units_sultanate")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_sultanate_name_faction"),)
     
