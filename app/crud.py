@@ -210,15 +210,16 @@ _LORE_KEYS = {
 
 def _parse_faction(data: dict) -> dict:
     lore = {k: data.pop(k) for k in list(data.keys()) if k in _LORE_KEYS}
-    # normalise sub_factions key — json files use sub_factions / sub_forces / processions
     for key in ("sub_forces", "processions"):
         if key in data:
             data["sub_factions"] = data.pop(key)
     if lore:
         data["lore"] = lore
-        # strip any keys that are not Faction columns
-        valid_columns = {c.name for c in models.Faction.__table__.columns}
-        data = {k: v for k, v in data.items() if k in valid_columns}
+
+    # ── keep only actual columns, strip relationships and unknown keys ───────
+    valid_columns = {c.name for c in models.Faction.__table__.columns}
+    data = {k: v for k, v in data.items() if k in valid_columns}
+
     return data
  
 def seed_factions(db: Session):
