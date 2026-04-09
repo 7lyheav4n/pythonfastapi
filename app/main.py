@@ -90,6 +90,7 @@ app.include_router(make_unit_router(
 def startup_seed():
     db = SessionLocal()
     try:
+        crud.seed_factions(db)
         crud.seed_items(db)
         crud.seed_currency(db)
         crud.seed_units_new_antioch(db)
@@ -98,7 +99,6 @@ def startup_seed():
         crud.seed_units_heretic(db)
         crud.seed_units_court(db)
         crud.seed_units_cult(db)
-        crud.seed_factions(db)
         print("[startup] seed complete")
     finally:
         db.close()
