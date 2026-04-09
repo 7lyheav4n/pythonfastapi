@@ -6,22 +6,28 @@
   },
   {
     "coinage": "dinar",
-    "usage": "sultanate_of_the_iron_wall",
+    "usage": "iron_sultanate",
     "description": "The rich mines within the Great Iron wall produce gold aplenty, and the Sultanate issues gold dinars and silver drachms with exceeding purity and standardised weight."
   },
   {
     "coinage": "silver_coin",
-    "usage": "heretic_legionaire",
-    "description": "heretic nations also value coin, for avarice of Mammon, one of the great princes of Hell knows no bounds, and he controls the commerce in the domains of the damned."
+    "usage": "heretic_legion",
+    "description": "Silver Coins (tarnished by the taint of Hell, bearing text extolling Judas's betrayal), heretic nations also value coin, for avarice of Mammon, one of the great princes of Hell knows no bounds, and he controls the commerce in the domains of the damned.",
+    "faction_id": ""
   },
   {
     "coinage": "souls",
-    "usage": "cult_of_the_Black_Grail;court_of_the_seven_headed_serpent",
-    "description": "bodies of men, horses, dogs, insects and other animals of every kind that are infected by the Black Grail lurch to their feet, driven by a demonic will."
+    "usage": "court_of_the_seven_headed_serpent",
+    "description": "demons deal in souls, sacrifices, and mortal suffering, bodies of men, horses, dogs, insects and other animals of every kind that are driven by a demonic will."
   },
   {
     "coinage": "slaves",
-    "usage": "cult_of_the_Black_Grail;court_of_the_seven_headed_serpent",
-    "description": "living human slave soldiers of the Court known as the wretched. These unfortunate souls possess not a drop of demon blood."
+    "usage": "heretic_legion",
+    "description": "living human slave soldiers of the Court known as the wretched."
+  },
+  {
+    "coinage": "None",
+    "usage": "cult_of_the_Black_Grail",
+    "description": "the Cult subsists on loot, trophies, and offerings to the altars of Beelzebub"
   }
 ]

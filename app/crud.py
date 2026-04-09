@@ -49,10 +49,12 @@ def seed_currency(db: Session):
     for data in load_seed("currency.json"):
         exists = db.query(models.Currency).filter(models.Currency.coinage == data["coinage"]).first()
         if not exists:
+            data["faction_id"] = data.get("usage")
             db.add(models.Currency(**data))
             inserted.append(data["coinage"])
     db.commit()
     return inserted
+
 def seed_units_court(db: Session):
     return _seed_unit_table(db, models.UnitCourtOfSevenHeaded, "units/court_of_the_seven_headed_units.json", "court_of_the_seven_headed_serpent")
 
