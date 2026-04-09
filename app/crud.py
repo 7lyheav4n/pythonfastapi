@@ -233,27 +233,27 @@ def seed_factions(db: Session):
         if not raw:
             continue
         data = _parse_faction(dict(raw))
-        exists = db.query(models.Factions).filter(models.Factions.id == data["id"]).first()
+        exists = db.query(models.Faction).filter(models.Faction.id == data["id"]).first()
         if not exists:
-            db.add(models.Factions(**data))
+            db.add(models.Faction(**data))
             inserted.append(data["id"])
     db.commit()
     return inserted
  
 def get_factions(db: Session):
-    return db.query(models.Factions).all()
+    return db.query(models.Faction).all()
  
 def get_faction_by_id(db: Session, faction_id: str):
-    return db.query(models.Factions).filter(models.Factions.id == faction_id).first()
+    return db.query(models.Faction).filter(models.Faction.id == faction_id).first()
  
 def get_factions_by_affiliation(db: Session, affiliation: str):
-    return db.query(models.Factions).filter(
-        models.Factions.affiliation.ilike(f"%{affiliation}%")
+    return db.query(models.Faction).filter(
+        models.Faction.affiliation.ilike(f"%{affiliation}%")
     ).all()
  
 def create_faction(db: Session, faction: schemas.FactionCreate):
     data = _parse_faction(dict(faction.model_dump()))
-    db_faction = models.Factions(**data)
+    db_faction = models.Faction(**data)
     db.add(db_faction)
     db.commit()
     db.refresh(db_faction)
