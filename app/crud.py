@@ -18,7 +18,7 @@ def load_seed(filename: str) -> list:
 
 
 # --- Generic unit seed helper -------------------------------------------------------
-def _seed_unit_table(db: Session, model, filename: str) -> list:
+def _seed_unit_table(db: Session, model, filename: str, faction_id: str) -> list:
     inserted = []
     for data in load_seed(filename):
         exists = db.query(model).filter(
@@ -26,6 +26,7 @@ def _seed_unit_table(db: Session, model, filename: str) -> list:
             model.faction == data["faction"],
         ).first()
         if not exists:
+            data["faction_id"] = faction_id
             db.add(model(**data))
             inserted.append(data["name"])
     db.commit()
