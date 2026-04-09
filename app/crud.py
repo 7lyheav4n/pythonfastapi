@@ -216,6 +216,9 @@ def _parse_faction(data: dict) -> dict:
             data["sub_factions"] = data.pop(key)
     if lore:
         data["lore"] = lore
+        # strip any keys that are not Faction columns
+        valid_columns = {c.name for c in models.Faction.__table__.columns}
+        data = {k: v for k, v in data.items() if k in valid_columns}
     return data
  
 def seed_factions(db: Session):
