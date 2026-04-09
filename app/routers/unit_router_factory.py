@@ -33,3 +33,4 @@ def make_unit_router(
     def create_unit(unit: schemas.UnitCreate, db: Session = Depends(get_db)):
         return create(db, unit)
 
+    return router
