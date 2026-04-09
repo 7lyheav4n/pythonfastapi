@@ -134,7 +134,7 @@ class UnitTrenchPilgrims(Base):
     description = Column(String, nullable=True)
     
     faction_id  = Column(String, ForeignKey("factions.id"), nullable=True, index=True)
-    faction_rel = relationship("Factions", back_populates="units_pilgrims")
+    faction_rel = relationship("Faction", back_populates="units_pilgrims")
     
     __table_args__ = (UniqueConstraint("name", "faction", name="uq_trench_name_faction"),)
  
